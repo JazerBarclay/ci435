@@ -1,62 +1,80 @@
-<!doctype html><!--HTML5 doctype declaration -->
-<html lang="en"><!--default language of the document content -->
-	
-    <head>
-		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
-		<title>Learning Journal template</title><!--web page title -->
-	</head>
-
-<body>
-<!--Markup all web page content inside the 'body' tags -->
-	<div id="wrapper">
-	<!--The 'wrapper' contains all the page content-->
-	
-    <header><!--The main heading for the page -->
-		<h1>page heading</h1>
-		<h2>sub-heading</h2>
-	</header>
-	
-    <nav><!--The primary navigation for the page -->
-	<ul>
-		<li><a href="#">Learning Journal</a></li>
-		<li><a href="tutorial.html">Tutorial</a></li>
-        <li><a href="contact.html">Contact me</a></li>
-	</ul>
-	</nav>
+<!doctype html><!-- HTML5 doctype declaration -->
+<html lang="en"><!-- Default language of the document content -->
+    <head> <!-- Document metadata -->
+		<meta charset="utf-8"> <!--Unicode character encoding for the document -->
+		<title>Jazer's Learning Journal</title> <!--Page Title -->
+    </head> <!-- End of Head -->
     
-    <main><!--The main page content -->
-        
-        	<h2>Weekly Posts</h2>
+    <body><!--Markup all web page content inside the 'body' tags -->
+    
+	    <div id="wrapper"> <!--The 'wrapper' contains all the page content-->
 	
-    	<article>
-			<header>
-			<h3>Week 1: ...</h3>
-			</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat, ante lectus 
-porttitor tellus, eget blandit urna nibh a metus. </p>
+            <header><!--The main heading for the page -->
+                <h1>Learning Journal</h1>
+                <h2>by Jazer Barclay</h2>
+            </header>
+        
+            <nav><!--The primary navigation for the page -->
+                <ul>
+                    <li><a href="#">Learning Journal</a></li>
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        
+            <main><!--The main page content -->
+            
+                <h2>Weekly Posts</h2>
+        
+                <article>
+                    <header>
+                        <h3>Week 1: Brighton Domains Setup</h3>
+                    </header>
+                    <main>
+                        <p>For our first week of CI435, we were tasked with reading our course specification on MyStudies and setting up our brighton.domains account where we will be making our first three HTML pages.</p>
+                        <p>Our lab session started with logging into the computers and accessing our MyStudies page. Here we could go to CI435 to view all the information about our web development module.</p>
+                        <p>In the CI435 module area there were the following sections:
+                            <ul>
+                                <li>Module Information which shows the module specification, the teaching plan and link to teaching staff contact details</li>
+                                <li>Reading List -  A list of books we can access virtually to learn more about HTML and CSS</li>
+                                <li>Assessments and Marks - A grading criteria and module guideline</li>
+                                <li>Study Materials -  Where all the content from the lectures is accessible and other learning resources</li>
+                            </ul>
+                        </p>
+                        <p>In the study section, there’s a folder called ‘SEMESTER 1 study material’ where the slides for the previous lecture are available.</p>
+                        <p>Under week 1 there is a link to the lecture and another for the lab tutorial site jh1033.bright.domains we we can find the instructions for building our site.</p>
+                        <p>Starting at the induction, we go through setting up brighton.domains. Here we go to the dashboard tab at the top and login to our account.</p>
+                        <p>Then we can access the file manager to see the files hosted on the server.</p>
+                        <p>We were instructed to create a new folder named ci435 under the public_html folder which is the root folder of the hosted website.</p>
+                        <p>Since this is an apache server hosted on a linux system the folders, when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern.</p>
+                        <p>In this new folder we can create a new file named index.html. This is the default file the server will serve up when the folder is accessed. Here is where our learning journal site will begin.</p>
+                        <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
+                        <p>With the contents saved, if I navigated to jb2139.brighton.domains/ci435, I could see the copied template live from any device.</p>
+                        <p>Next we had to create the second and third pages for the tutorial and contact pages respectively.</p>
+                        <p>These were based from the same template however must link back to all there other pages on the site.</p>
+                        <p>I used the 'a' anchor tag to create links between the different pages and ensured they all worked on every page. </p>
+                        <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘hard refresh’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
+                        <p>As a final step to our first week lab session, we needed to test that our code conformed to the W3C standards for HTML5.</p>
+                        <p>My website index.html, tutorial.html and contact.html all gave no errors and no warnings.</p>
+                        <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.</p>
+                    </div>
+                    </main>
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
+                            <li><a href="https://html.com/tags/aside/">Aside Element</a></li>
+                        </ol>
+                    </aside>
 
-        <p>Some reference here to my own reading and research, explaining what I have done and what I have learned from it.</p>
-        
-		</article>
-           
-    </main><!--Close main page content --> 
-        
-        <aside>
-        
-        	<h2>References</h2>
+                </article>
             
-            	<ol>
-                	<li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
-                    <li>...</li>
-                </ol>
-            
-        </aside>    
+            </main><!--Close main page content --> 
  
-  
-	<footer><!--Footer content -->
-		<small>&copy; 2019, author.</small>
-	</footer>
+            <footer> <!-- Footer content -->
+                <small>&copy; 2020, Jazer Barclay</small>
+            </footer>
 
-	</div><!--Close 'wrapper' div -->
-</body><!--Close 'body' -->
+	    </div><!--Close 'wrapper' div -->
+    </body><!--Close 'body' -->
 </html><!--Close 'html' -->
