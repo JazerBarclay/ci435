@@ -8,7 +8,8 @@
     <body><!--Markup all web page content inside the 'body' tags -->
     
 	    <div id="wrapper"> <!--The 'wrapper' contains all the page content-->
-	
+            <a id="top"></a>
+
             <header><!--The main heading for the page -->
                 <h1>Learning Journal</h1>
                 <h2>by Jazer Barclay</h2>
@@ -29,36 +30,53 @@
                 <article>
                     <header>
                         <h3>Week 1: Brighton Domains Setup</h3>
+                        <p>Published on <strong><time datetime="2020-10-07">October 7<sup>th</sup>, 2020</time></strong></p>
                     </header>
-                    <main>
-                        <p>For our first week of CI435, we were tasked with reading our course specification on MyStudies and setting up our brighton.domains account where we will be making our first three HTML pages.</p>
-                        <p>Our lab session started with logging into the computers and accessing our MyStudies page. Here we could go to CI435 to view all the information about our web development module.</p>
-                        <p>In the CI435 module area there were the following sections:
-                            <ul>
-                                <li>Module Information which shows the module specification, the teaching plan and link to teaching staff contact details</li>
-                                <li>Reading List -  A list of books we can access virtually to learn more about HTML and CSS</li>
-                                <li>Assessments and Marks - A grading criteria and module guideline</li>
-                                <li>Study Materials -  Where all the content from the lectures is accessible and other learning resources</li>
-                            </ul>
-                        </p>
-                        <p>In the study section, there’s a folder called ‘SEMESTER 1 study material’ where the slides for the previous lecture are available.</p>
-                        <p>Under week 1 there is a link to the lecture and another for the lab tutorial site jh1033.bright.domains we we can find the instructions for building our site.</p>
-                        <p>Starting at the induction, we go through setting up brighton.domains. Here we go to the dashboard tab at the top and login to our account.</p>
-                        <p>Then we can access the file manager to see the files hosted on the server.</p>
-                        <p>We were instructed to create a new folder named ci435 under the public_html folder which is the root folder of the hosted website.</p>
-                        <p>Since this is an apache server hosted on a linux system the folders, when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern.</p>
-                        <p>In this new folder we can create a new file named index.html. This is the default file the server will serve up when the folder is accessed. Here is where our learning journal site will begin.</p>
-                        <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
-                        <p>With the contents saved, if I navigated to jb2139.brighton.domains/ci435, I could see the copied template live from any device.</p>
-                        <p>Next we had to create the second and third pages for the tutorial and contact pages respectively.</p>
-                        <p>These were based from the same template however must link back to all there other pages on the site.</p>
-                        <p>I used the 'a' anchor tag to create links between the different pages and ensured they all worked on every page. </p>
-                        <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘hard refresh’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
-                        <p>As a final step to our first week lab session, we needed to test that our code conformed to the W3C standards for HTML5.</p>
-                        <p>My website index.html, tutorial.html and contact.html all gave no errors and no warnings.</p>
-                        <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.</p>
-                    </div>
-                    </main>
+                    <!-- Main element of article -->
+                    <p>For our first week of CI435, we were tasked with reading our course specification on MyStudies and setting up our brighton.domains account where we will be making our first three HTML pages.</p>
+                    
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/brighton-domains-screenshot.png" alt="Brighton Domains Homepage Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>Brighton domains homepage screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <p>Our lab session started with logging into the computers and accessing our MyStudies page. Here we could go to CI435 to view all the information about our web development module.</p>
+                    <p>In the CI435 module area there were the following sections:</p>
+                    <ul>
+                        <li>Module Information which shows the module specification, the teaching plan and link to teaching staff contact details</li>
+                        <li>Reading List -  A list of books we can access virtually to learn more about HTML and CSS</li>
+                        <li>Assessments and Marks - A grading criteria and module guideline</li>
+                        <li>Study Materials -  Where all the content from the lectures is accessible and other learning resources</li>
+                    </ul>
+                    <p>In the study section, there’s a folder called ‘SEMESTER 1 study material’ where the slides for the previous lecture are available.</p>
+                    <p>Under week 1 there is a link to the lecture and another for the lab tutorial site jh1033.bright.domains we we can find the instructions for building our site.</p>
+                    <p>Starting at the induction, we go through setting up brighton.domains. Here we go to the dashboard tab at the top and login to our account.</p>
+                    <p>Then we can access the file manager to see the files hosted on the server.</p>
+                    <p>We were instructed to create a new folder named ci435 under the public_html folder which is the root folder of the hosted website.</p>
+                    <p>Since this is an apache server hosted on a linux system the folders, when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern.</p>
+                    <p>In this new folder we can create a new file named index.html. This is the default file the server will serve up when the folder is accessed. Here is where our learning journal site will begin.</p>
+                    <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
+                    <p>With the contents saved, if I navigated to jb2139.brighton.domains/ci435, I could see the copied template live from any device.</p>
+                    <p>Next we had to create the second and third pages for the tutorial and contact pages respectively.</p>
+                    <p>These were based from the same template however must link back to all there other pages on the site.</p>
+                    <p>I used the 'a' anchor tag to create links between the different pages and ensured they all worked on every page. </p>
+                    <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘hard refresh’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
+                    <p>As a final step to our first week lab session, we needed to test that our code conformed to the W3C standards for HTML5.</p>
+                    <p>My website index.html, tutorial.html and contact.html all gave no errors and no warnings.</p>
+                    <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.</p>
+                    <p>In summary, this week I learned how to:</p>
+                    <ol>
+                        <li>Set up a folder for my website on my Brighton Domains workspace</li>
+                        <li>Link two pages together with a navigation menu using a relative link</li>
+                        <li>Create links to external websites using an absolute link</li>
+                        <li>When to use the <code>h1</code> and <code>h2</code> tags</li>
+                        <li>Update the web page title</li>
+                        <li>Use the W3C validator to validate HTML documents</li>
+                    </ol>
+                    
+                    <!-- End of article contentn-->
                     <aside>
                         <h2>References</h2>
                         <ol>
@@ -68,10 +86,29 @@
                     </aside>
 
                 </article>
+        
+                <article>
+                    <header>
+                        <h3>Week 2: </h3>
+                        <p>Published on <strong><time datetime="2020-10-14">October 14<sup>th</sup>, 2020</time></strong></p>
+                    </header>
+                    <!-- Main element of article -->
+                    <p></p>
+                    <!-- End of article contentn-->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li></li>
+                        </ol>
+                    </aside>
+
+                </article>
             
             </main><!--Close main page content --> 
  
             <footer> <!-- Footer content -->
+                <p><a href="#top">Go to top</a></p>
+                <a href="mailto:jb2139@uni.brighton.ac.uk">Email Jazer Barclay</a>
                 <small>&copy; 2020, Jazer Barclay</small>
             </footer>
 
