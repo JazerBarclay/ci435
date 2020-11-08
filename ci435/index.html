@@ -2,7 +2,11 @@
 <html lang="en"><!-- Default language of the document content -->
     <head> <!-- Document metadata -->
 		<meta charset="utf-8"> <!--Unicode character encoding for the document -->
-		<title>Jazer's Learning Journal</title> <!--Page Title -->
+        <title>Jazer's Learning Journal</title> <!--Page Title -->
+        <!-- Temporary Styling for Images -->
+        <style>
+            img {max-width: 800px; height: auto;}
+        </style>
     </head> <!-- End of Head -->
     
     <body><!--Markup all web page content inside the 'body' tags -->
@@ -12,7 +16,7 @@
 
             <header><!--The main heading for the page -->
                 <h1>Learning Journal</h1>
-                <h2>by Jazer Barclay</h2>
+                <h2>Building a Responsive Site</h2>
             </header>
         
             <nav><!--The primary navigation for the page -->
@@ -33,39 +37,47 @@
                         <p>Published on <strong><time datetime="2020-10-07">October 7<sup>th</sup>, 2020</time></strong></p>
                     </header>
                     <!-- Main element of article -->
-                    <p>For our first week of CI435, we were tasked with reading our course specification on MyStudies and setting up our brighton.domains account where we will be making our first three HTML pages.</p>
+                    <p>For my first week of CI435, I was tasked with reading our course specification on MyStudies and setting up my brighton.domains account where I will be making my first three HTML pages.<sup><a href="#w1-1">1</a></sup></p>
                     
                     <figure> <!-- Image that illustrates the web page content -->
                         <img src="images/brighton-domains-screenshot.png" alt="Brighton Domains Homepage Screenshot" /> <!-- Source file of the image -->
                         <figcaption>Brighton domains homepage screenshot<br /> <!-- Illustration caption -->
-                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
                         </figcaption> <!-- End Caption-->
                     </figure> <!-- End figure markup -->
 
-                    <p>Our lab session started with logging into the computers and accessing our MyStudies page. Here we could go to CI435 to view all the information about our web development module.</p>
-                    <p>In the CI435 module area there were the following sections:</p>
+                    <p>The lab session started with logging into the computers and accessing the MyStudies page. Here I could go to CI435 to view all the information about the web development module.</p>
+                    <p>In the module area there are the following sections:</p>
                     <ul>
                         <li>Module Information which shows the module specification, the teaching plan and link to teaching staff contact details</li>
                         <li>Reading List -  A list of books we can access virtually to learn more about HTML and CSS</li>
                         <li>Assessments and Marks - A grading criteria and module guideline</li>
                         <li>Study Materials -  Where all the content from the lectures is accessible and other learning resources</li>
                     </ul>
-                    <p>In the study section, there’s a folder called ‘SEMESTER 1 study material’ where the slides for the previous lecture are available.</p>
-                    <p>Under week 1 there is a link to the lecture and another for the lab tutorial site jh1033.bright.domains we we can find the instructions for building our site.</p>
-                    <p>Starting at the induction, we go through setting up brighton.domains. Here we go to the dashboard tab at the top and login to our account.</p>
-                    <p>Then we can access the file manager to see the files hosted on the server.</p>
-                    <p>We were instructed to create a new folder named ci435 under the public_html folder which is the root folder of the hosted website.</p>
-                    <p>Since this is an apache server hosted on a linux system the folders, when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern.</p>
-                    <p>In this new folder we can create a new file named index.html. This is the default file the server will serve up when the folder is accessed. Here is where our learning journal site will begin.</p>
+                    <p>In the study section, there’s a folder called '<em>SEMESTER 1 study material</em>' where the slides for the previous lectures are available.</p>
+                    <p>Under week 1 there is a link to the lecture and another for the lab tutorial site <em>jh1033.bright.domains</em> with instructions for building the website.</p>
+                    <p>Starting at the induction and going through setting up brighton.domains. I went to the dashboard tab at the top and logged into my account.</p>
+                    <p>Here I can access the file manager to see the files hosted on the server.</p>
+                    <p>We were instructed to create a new folder named ‘<em>ci435</em>’ under the public_html folder which is the root folder of the hosted website.</p>
+                    <blockquote>Since this is an apache server hosted on a linux system, the folders when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern. Note also that the web page names must also follow this convention.</blockquote>
+                    <p>In this new folder we can create a new file named ‘<em>index.html</em>’. This is the default file the server will use when the folder is accessed. Here is where our learning journal site will begin.</p>
                     <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
-                    <p>With the contents saved, if I navigated to jb2139.brighton.domains/ci435, I could see the copied template live from any device.</p>
-                    <p>Next we had to create the second and third pages for the tutorial and contact pages respectively.</p>
+                    <p>With the contents saved, if I navigated to the url <em>jb2139.brighton.domains/ci435</em>, I could see the copied template live from any device.</p>
+                    <p>Next I created the second and third pages for the tutorial and contact pages respectively using the same template from the first (index) page.</p>
                     <p>These were based from the same template however must link back to all there other pages on the site.</p>
-                    <p>I used the 'a' anchor tag to create links between the different pages and ensured they all worked on every page. </p>
-                    <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘hard refresh’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
+                    <p>Though these were based on the same template, they must link back to all the other pages on the site.</p>
+                    <p>I used the <code>&lt;a&gt;</code> anchor tag to create links between the different pages and ensured they all worked on every page.</p>
+                    <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘<em>hard refresh</em>’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
                     <p>As a final step to our first week lab session, we needed to test that our code conformed to the W3C standards for HTML5.</p>
                     <p>My website index.html, tutorial.html and contact.html all gave no errors and no warnings.</p>
-                    <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.</p>
+                    <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.<sup><a href="#w1-2">2</a></sup></p>
+
+                    <!-- BONUS SECTION -->
+                    <p>I notices when writing up this section that there references are in an aside element only in the wrapper rather than per section. I did some searching for if the HTML5 standard recommends only a single aside element however using one per article is accepted as good practice. The aside element is used to identify content that is related to the primary content of the webpage, but does not constitute the primary content of the page.<sup><a href="#w1-3">3</a></sup></p>
+                    <p>Since testing the web pages, I have added my code to Github where all changes are stored and kept backed up. By hosting my code here, I can keep track of all the weekly changes and revert my code should I break something and want to go back to the last working version.<sup><a href="#w1-4">4</a></sup></p>
+                    <p>Downloaded the code from GitHub to my personal laptop where I could make local changes without constantly updating the web page. I’ve found this useful when working off-line when commuting and also prefer the interface of Visual Studio Code which is the editor I use for programming.<sup><a href="#w1-5">5</a></sup></p>
+                    <p>Furthermore I have started to use FileZilla to upload my code since the GitHub action cannot upload automatically due to how the SFTP server is configured.<sup><a href="#w1-6">6</a></sup></p>
+                    
                     <p>In summary, this week I learned how to:</p>
                     <ol>
                         <li>Set up a folder for my website on my Brighton Domains workspace</li>
@@ -75,13 +87,37 @@
                         <li>Update the web page title</li>
                         <li>Use the W3C validator to validate HTML documents</li>
                     </ol>
+                    <p>And here is a view of my site concluding week 1:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week1-finish.png" alt="My Learning Journal Week 1 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 1 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
                     
                     <!-- End of article contentn-->
                     <aside>
                         <h2>References</h2>
                         <ol>
-                            <li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
-                            <li><a href="https://html.com/tags/aside/">Aside Element</a></li>
+                            <li><a id="w1-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial01/tutorial01.html">
+                                Tutorial Week 1
+                            </a></li>
+                            <li><a id="w1-2" href="http://validator.w3.org">
+                                W3C Markup Validation Service
+                            </a></li>
+                            <li><a id="w1-3" href="https://html.com/tags/aside<">
+                                Aside Element Reference
+                            </a></li>
+                            <li><a id="w1-4" href="Https://github.com/jazerbarclay/ci435">
+                                My GitHub Repository
+                            </a></li>
+                            <li><a id="w1-5" href="https://code.visualstudio.com/">
+                                Visual Studio Code Website
+                            </a></li>
+                            <li><a id="w1-6" href="https://filezilla-project.org/">
+                                FileZilla Webbsite
+                            </a></li>
                         </ol>
                     </aside>
 
@@ -89,16 +125,104 @@
         
                 <article>
                     <header>
-                        <h3>Week 2: </h3>
+                        <h3>Week 2: Marking up content</h3>
                         <p>Published on <strong><time datetime="2020-10-14">October 14<sup>th</sup>, 2020</time></strong></p>
                     </header>
                     <!-- Main element of article -->
-                    <p></p>
+                    <p>This week our objective was to <sup><a href="#w2-1">1</a></sup>:</p>
+                    <ol>
+                        <li>Add a publication date to each post</li>
+                        <li>Add a list to a post</li>
+                        <li>Create in-page navigation links</li>
+                        <li>Add a copyright-free image</li>
+                        <li>Create an email link</li>
+                    </ol>
+
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/huxley-building.jpeg" alt="A picture of the Huxley building" /> <!-- Source file of the image -->
+                        <figcaption>The Huxley building on Moulscoomb campus<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <p>The publication date uses the HTML5 element <code>&lt;time&gt;</code> . I checked the Mozilla documentation for the time element and the <code>datetime</code> attribute is a machine-readable format that improves search engine results.<sup><a href=“#w2-2”>2</a></sup></p>
+                    <p>I added this new publication date to each article in their <code>&lt;header&gt;</code> elements and updated both the display text as well as the <code>datetime</code> attribute. I will look into adding a colour to these elements in the future to ensure they stand out.</p>
+                    <p>Next I used an unordered list <code>&lt;ul&gt;</code> at the top of the first week post for the module sections and an ordered list <code>&lt;ol&gt;</code> at the end of the first week post for I learned in our first week. Each list uses an encompassing tag with list items <code>&lt;li&gt;</code> within to represent each point or number.</p>
+                    <p>I also used the <code>&lt;code&gt;</code> tag to cover the code elements and <code>&lt;em&gt;</code> tags for document names and other important information to emphasise their importance. These elements look a bit plain however I will add more styling to them later on.
+                    </p>
+                    <p>Next I added a relative link using the same <code>&lt;a&gt;</code> tag by instead of linking to another local site page or an external site page, I added a link to an ID of an element on the same page.</p>
+                    <p>I did this by making the anchor’s <em>href</em> link to an element’s ID. I added an anchor element at the top of the page and gave it the ID of <code>#top</code>. By clicking the link, the browser automatically scrolls to the element with the matching ID.</p>
+                    <blockquote>Since each ID can/should only be used on a single element, the page should never scroll to the wrong element.</blockquote>
+                    <p>After, I had to add a copyright-free image to the weekly posts using the <code>&lt;figure&gt;</code>, <code>img</code> and <code>figcaption</code> tags.</p>
+                    <p>The <code>&lt;figure&gt;</code> tag is an image wrapper that illustrates the web page content. Within this element is contained the <code>&lt;img&gt;</code> tag which is the source file of the image. Also within the <code>figure</code> element is the <code>&lt;figcaption&gt;</code> tag which illustrates the source image attached.</p>
+                    <p>To ensure the picture was copyright-free, I took a picture of the Huxley building from my iPhone 7 and used that.</p>
+                    <p>I added at least a single image to all posts thus far to later be used for banner images. Intend for the website to look its best on all possible screen sizes including mobile and high resolution desktops.</p>
+                    <blockquote>Note that I have temporarily added a style block in the header to make images sane for a while since their intended sizes cannot be dynamically be set yet due to no CSS file, no viewport or media queries.</blockquote>
+                    <p>For the email link, I added another anchor tag to my footer with a <code>href</code> that includes the <code>mailto</code> flag to open the user’s default mail application and send me an email.</p>
+                    <p>To conclude this week’s tutorial I validated my code on w3.org<sup><a href="#w2-3">3</a></sup> again to ensure I hadn’t made any silly mistakes and that I am conforming to the HTML5 standard. Sure enough it came back with no errors!</p>
+
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/w3-validator-no-errors.png" alt="W3C Validator showing no errors screenshot" /> <!-- Source file of the image -->
+                        <figcaption>W3C Validator showing no errors<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <!-- BONUS SECTION -->
+                    <p>I was determined to save myself some time by adding automation for deployment and looked into if GitHub actions could, rather than use FTP to send the updated content, use RSYNC to sync the files from the GitHub account over to the remote hosting server.</p>
+
+                    <p>The server is hosted on a Linux Apache machine, I could use my credentials to SSH into the machine. Sure enough rsync is available on the box and could upload files that way. I then looked into the GitHub Action to deploy the code and I found this one:<sup><a href="#w2-3">3</a></sup></p>
+                    
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/rsync-deploy-action-github.png" alt="GitHub Actions rsync deploy screenshot" /> <!-- Source file of the image -->
+                        <figcaption>GitHub Actions rsync deploy screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <p>This looked promising. I unfortunately couldn’t create a <em>deploy</em> user to ensure if anything happened to my GitHub account, they wouldn’t gain full system access however I used secrets for all my credentials and upload destinations to ensure security.</p>
+
+                    <p>Finally I had my code uploading without a hitch and I could say goodbye to FileZilla eating into my time having to constantly upload the new files.</p>
+
+                    <p>To compare time to deploy between the FTP and RSYNC, FTP took 1 minute on average and didn't delete old removed files. RSYNC completes in 20 seconds even with large payloads and removes the unused files to match the structure in the repository. Definately a big upgrade!</p>
+
+                    <p>I also did some research into the <code>pre</code> tag<sup><a href="#w2-3">3</a></sup> as in future posts, I would very much like to add full blocks of code rather than inline. The <code>pre</code> tag enclosing the <code>code</code> tag like so</p>
+
+<pre><code>&lt;pre&gt;&lt;code&gt;
+    System.out.println();
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+                    <p>This way with some future formatting, I could still use the <code>code</code> semantics with a wrapper to ensure it was on its own line with the pre-formatted code maintained!</p>
+
+                    <p>Here is a view of my site concluding week 2:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week2-finish.png" alt="My Learning Journal Week 2 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 2 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
                     <!-- End of article contentn-->
                     <aside>
                         <h2>References</h2>
                         <ol>
-                            <li></li>
+                            <li><a id="w2-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial02.html">
+                                Tutorial Week 2
+                            </a></li>
+                            <li><a id="w2-2" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">Mozilla 
+                                Time Element
+                            </a></li>
+                            <li><a id="w2-3" href="http://validator.w3.org">
+                                W3C Markup Validation Service
+                            </a></li>
+                            <li><a id="w2-4" href="https://github.com/marketplace/actions/rsync-deployments-action">
+                                Github Actions Rsync Deploy to Server
+                            </a></li>
+                            <li><a id="w2-5" href="https://stackoverflow.com/questions/4611591/code-vs-pre-vs-samp-for-inline-and-block-code-snippets">
+                                Stack Overflow on Inline and Block Code Snippets
+                            </a></li>
                         </ol>
                     </aside>
 
