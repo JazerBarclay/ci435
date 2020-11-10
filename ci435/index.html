@@ -60,7 +60,7 @@
                     <p>Starting at the induction and going through setting up brighton.domains. I went to the dashboard tab at the top and logged into my account.</p>
                     <p>Here I can access the file manager to see the files hosted on the server.</p>
                     <p>We were instructed to create a new folder named ‘<em>ci435</em>’ under the public_html folder which is the root folder of the hosted website.</p>
-                    <blockquote>Since this is an apache server hosted on a linux system, the folders when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern. Note also that the web page names must also follow this convention.</blockquote>
+                    <p>Since this is an apache server hosted on a linux system, the folders when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern. Note also that the web page names must also follow this convention.</p>
                     <p>In this new folder we can create a new file named ‘<em>index.html</em>’. This is the default file the server will use when the folder is accessed. Here is where our learning journal site will begin.</p>
                     <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
                     <p>With the contents saved, if I navigated to the url <em>jb2139.brighton.domains/ci435</em>, I could see the copied template live from any device.</p>
@@ -154,7 +154,7 @@
                     </p>
                     <p>Next I added a relative link using the same <code>&lt;a&gt;</code> tag by instead of linking to another local site page or an external site page, I added a link to an ID of an element on the same page.</p>
                     <p>I did this by making the anchor’s <em>href</em> link to an element’s ID. I added an anchor element at the top of the page and gave it the ID of <code>#top</code>. By clicking the link, the browser automatically scrolls to the element with the matching ID.</p>
-                    <blockquote>Since each ID can/should only be used on a single element, the page should never scroll to the wrong element.</blockquote>
+                    <p>Since each ID can/should only be used on a single element, the page should never scroll to the wrong element.</p>
                     <p>After, I had to add a copyright-free image to the weekly posts using the <code>&lt;figure&gt;</code>, <code>img</code> and <code>figcaption</code> tags.</p>
                     <p>The <code>&lt;figure&gt;</code> tag is an image wrapper that illustrates the web page content. Within this element is contained the <code>&lt;img&gt;</code> tag which is the source file of the image. Also within the <code>figure</code> element is the <code>&lt;figcaption&gt;</code> tag which illustrates the source image attached.</p>
                     <p>To ensure the picture was copyright-free, I took a picture of the Huxley building from my iPhone 7 and used that.</p>
@@ -235,9 +235,12 @@
                         <p>Published on <strong><time datetime="2020-10-21">October 21<sup>st</sup>, 2020</time></strong></p>
                     </header>
                     <!-- Main element of article -->
-                    <p>This week our objective was to <sup><a href="#w3-1">1</a></sup>:</p>
+                    <p>This week our objectives were to <sup><a href="#w3-1">1</a></sup>:</p>
                     <ol>
-                        <li>Add a publication date to each post</li>
+                        <li>Make use of nested lists</li>
+                        <li>Add a table</li>
+                        <li>Quote text</li>
+                        <li>Make an image with a link</li>
                     </ol>
 
                     <!-- Week 3 Banner -->
@@ -248,13 +251,164 @@
                         </figcaption> <!-- End Caption-->
                     </figure> <!-- End figure markup -->
 
-                    <p></p>
+                    <p>We have previously used lists in week 2 however we can nest a list <em>within</em> a list to create a sub list. <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> only allow exactly zero or more <code>&lt;li&gt;</code> elements however we can use an <code>&lt;li&gt;</code> element and add a list to it.</p>
 
+                    <p>By doing this, we can create more complex lists like the following showing each week <em>and</em> what we covered in each of those weeks thus far.</p>
+
+                    <ol>
+                        <li>Week 1
+                            <ul>
+                                <li>Set up site folder</li>
+                                <li>Create index.html</li>
+                                <li>Create guide.html</li>
+                                <li>Link files in a lists for navigation</li>
+                            </ul>
+                        </li>
+                        <li>Week 2
+                            <ul>
+                                <li>Add a publication date to each post</li>
+                                <li>Add a list to a post</li>
+                                <li>Create in-page navigation links</li>
+                                <li>Add a copyright-free image</li>
+                                <li>Create an email link</li>
+                            </ul>
+                       </li>
+                    </ol>
+
+                    <p>We can also create a third type of list called a <em>description list</em>. Like the other lists, we use an encapsulating tag <code>&lt;dl&gt;</code> (description list) and within we have description term <code>&lt;dt&gt;</code>. We also have the term description <code>&lt;dd&gt;</code> which is used to further expand on the term with a long description. This would be useful for something like a glossary of terms with the term as a <code>&lt;dt&gt;</code> and an <code>&lt;dd&gt;</code> containing its description.</p>
+
+                    <dl>
+                        <dt><strong>HTML</strong></dt>
+                          <dd>Hyper-text markup language - markup language used to structure content</dd>
+                        <dt><strong>CSS</strong></dt>
+                          <dd>Cascading stylesheets - used to define presentation of HTML elements</dd>
+                        <dt><strong>JavaScript</strong></dt>
+                          <dd>Scripting language for adding interactive behaviour to web pages</dd>
+                    </dl>
+
+                    <p>Next we look at creating a new table. I remember the old days back in 2007 taking IT in secondary school and nothing aligning correctly. It was the wild west with people recommending tables for structuring a whole site and floating elements left to make them sit side by side. Thank goodness those days are long gone and HTML5 and CSS3 solved this with CSS grid!</p>
+
+                    <p>Back to the point, we can create a table using the <code>table</code> tag and within it, add table rows <code>tr</code>, table headers <code>th</code> for the headers and table data <code>td</code> for the table cells.</p>
+
+                    <p>Since tables don't have any styling, we need to add <code>border="1"</code> in order to add a border around each cell and the table as a whole. This I know has been deprecated in favour of using CSS to style it. After all , HTML should be the structure containing the content and the CSS only for the styling.</p>
+
+                    <p>Below is an example of a table using my university timetable of lectures and lab sessions.</p>
+
+                    <p>Tables</p>
+
+                    <table border="1">
+                        <tr>
+                            <th>Day/time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                        </tr>
+                        <tr>
+                            <td>9am-10am</td>
+                            <td></td>
+                            <td>Cyber Security Lecture</td>
+                            <td>Web Development Lab</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10am-11am</td>
+                            <td></td>
+                            <td>Cyber Security Lecture</td>
+                            <td>Working in the Industry Lab</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11am-12pm</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12pm-1pm</td>
+                            <td>Programming Seminar</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1pm-2pm</td>
+                            <td></td>
+                            <td>Working in the Industry Lecture</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2pm-3pm</td>
+                            <td></td>
+                            <td>Programming Lecture</td>
+                            <td></td>
+                            <td>Cyber Security Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3pm-4pm</td>
+                            <td></td>
+                            <td></td>
+                            <td>Programming Lab</td>
+                            <td>Cyber Security Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4pm-5pm</td>
+                            <td></td>
+                            <td>Computing Technologies Lecture</td>
+                            <td></td>
+                            <td>Computing Technologies Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5pm-6pm</td>
+                            <td></td>
+                            <td>Web Development Lecture</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+
+                    <p>To note on this table, I have removed the <code>border="1"</code> and added the border in my temporary style tag in the header to conform with the HTML5 standard shown in the validator. I do understand that using CSS in the HTML document is bad practices however we will be working with CSS in the next week's tutorial. I will move this code next week.</p>
+
+                    <p>As this is a journal/blog, we will undoubtably be using references and quoting the source material is very useful. For this I can use the <code>&lt;blockquote&gt;</code> element to wrap a referenced quote and its source. An example of a cited reference with a backlink to the source I have included a quote to the <code>adide</code> element from the w3.org website</p>
+
+                    <blockquote> <!-- A Quote -->
+                        <p> <!-- Quote Paragraph -->
+                            The aside element represents a section of a page that consists of content that is tangentially related to the content of the parenting sectioning content, and which could be considered separate from that content.
+                        <p>
+                        <footer> <!-- Footer for cite reference -->
+                            <cite> <!-- Cited Link Reference -->
+                                - <a href="https://www.w3.org/TR/html51/sections.html#the-aside-element">W3C standards for web design</a>
+                            </cite>
+                        </footer>
+                    </blockquote> <!-- End Block Quote-->
+
+                    <p>Moving onto more advanced anchor elements. We can wrap any element in anchor tags to make the child elements link to a given source much like our text does in a standard anchor element. Here we can make a new paragraph containing an anchor link that has an image as its clickable asset.</p>
+
+                    <p>In this example I use the W3C HTML5 logo with CSS styling logo </p>
+
+                    <p>
+                        <a href="http://www.w3.org/html/logo/">
+                            <img src="https://www.w3.org/html/logo/badge/html5-badge-v-css3.png" alt="HTML5 logo" />
+                        </a>
+                        The W3C has made an HTML5 logo that you can add to your web page. The HTML5 logo is licensed under Creative Commons Attribution 3.0 — so it is free to use.
+                    </p>
 
                     <p>Here is a view of my site concluding week 3:</p>
                                         
                     <figure> <!-- Image that illustrates the web page content -->
-                        <img src="images/week3-finish.png" alt="My Learning Journal Week 2 Screenshot" /> <!-- Source file of the image -->
+                        <img src="images/week2-finish.png" alt="My Learning Journal Week 2 Screenshot" /> <!-- Source file of the image -->
                         <figcaption>My Learning Journal Week 2 Screenshot<br /> <!-- Illustration caption -->
                         <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
                         </figcaption> <!-- End Caption-->
@@ -266,6 +420,12 @@
                         <ol>
                             <li><a id="w3-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial03/tutorial03.html">
                                 Tutorial Week 3
+                            </a></li>
+                            <li><a id="w3-2" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
+                                Understanding more about <code>&lt;blockquotes&gt;</code>
+                            </a></li>
+                            <li><a id="" href="http://html5doctor.com/blockquote-q-cite/">
+                                More <code>&lt;blockquotes&gt;</code> reading
                             </a></li>
                         </ol>
                     </aside>
