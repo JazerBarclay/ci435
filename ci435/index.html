@@ -3,13 +3,10 @@
     <head> <!-- Document metadata -->
 		<meta charset="utf-8"> <!--Unicode character encoding for the document -->
         <title>Jazer's Learning Journal</title> <!--Page Title -->
-        <!-- Temporary Styling for Images -->
-        <style>
-            img {max-width: 800px; height: auto;}
-            table, th, td {
-                border: 1px solid black;
-            }
-        </style>
+        <!-- Normalize css to ensure the same style is used as a base across all browsers -->
+        <link href="css/normalize.css" rel="stylesheet" />
+        <!-- My Stylesheet -->
+        <link href="css/stylesheet.css" rel="stylesheet /">
     </head> <!-- End of Head -->
     
     <body><!--Markup all web page content inside the 'body' tags -->
@@ -22,7 +19,7 @@
                 <h2>Building a Responsive Site</h2>
             </header>
         
-            <nav><!--The primary navigation for the page -->
+            <nav class="menu"><!--The primary navigation for the page -->
                 <ul>
                     <li><a href="#">Learning Journal</a></li>
                     <li><a href="tutorial.html">Tutorial</a></li>
@@ -35,7 +32,7 @@
                 <h2>Weekly Posts</h2>
         
                 <article>
-                    <header>
+                    <header class="post">
                         <h3>Week 1: Brighton Domains Setup</h3>
                         <p>Published on <strong><time datetime="2020-10-07">October 7<sup>th</sup>, 2020</time></strong></p>
                     </header>
@@ -128,7 +125,7 @@
                 </article>
         
                 <article>
-                    <header>
+                    <header class="post">
                         <h3>Week 2: Marking up content</h3>
                         <p>Published on <strong><time datetime="2020-10-14">October 14<sup>th</sup>, 2020</time></strong></p>
                     </header>
@@ -233,7 +230,7 @@
                 </article>
         
                 <article>
-                    <header>
+                    <header class="post">
                         <h3>Week 3: More HTML Markup</h3>
                         <p>Published on <strong><time datetime="2020-10-21">October 21<sup>st</sup>, 2020</time></strong></p>
                     </header>
@@ -384,7 +381,7 @@
 
                     <p>To note on this table, I have removed the <code>border="1"</code> and added the border in my temporary style tag in the header to conform with the HTML5 standard shown in the validator. I do understand that using CSS in the HTML document is bad practices however we will be working with CSS in the next week's tutorial. I will move this code next week.</p>
 
-                    <p>As this is a journal/blog, we will undoubtably be using references and quoting the source material is very useful. For this I can use the <code>&lt;blockquote&gt;</code> element to wrap a referenced quote and its source. An example of a cited reference with a backlink to the source I have included a quote to the <code>adide</code> element from the w3.org website</p>
+                    <p>As this is a journal/blog, we will undoubtably be using references and quoting the source material is very useful. For this I can use the <code>&lt;blockquote&gt;</code> element to wrap a referenced quote and its source<sup><a href="#w3-2">2</a> <a href="#w3-3">3</a></sup>. An example of a cited reference with a backlink to the source I have included a quote to the <code>adide</code> element from the w3.org website</p>
 
                     <blockquote> <!-- A Quote -->
                         <p> <!-- Quote Paragraph -->
@@ -453,7 +450,68 @@
                         </ol>
                     </aside>
                 </article>
-            
+
+                <!-- Week 4 -->
+                <article>
+                    <header class="post">
+                        <h3>Week 4: Cascadig Style Sheets</h3>
+                        <p>Published on <strong><time datetime="2020-10-28">October 28<sup>th</sup>, 2020</time></strong></p>
+                    </header>
+                    <!-- Main element of article -->
+                    <p>This week our objectives were to <sup><a href="#w4-1">1</a></sup>:</p>
+                    <ol>
+                        <li>Copy normalize.css and link to all your web pages</li>
+                        <li>Copy stylesheet.css and link to all your web pages</li>
+                        <li>Style the body element</li>
+                        <li>Style other elements:
+                            <ul>
+                                <li><code>&lt;h1&gt;, &lt;h2&gt;... &lt;h3&gt;</code></li>
+                                <li><code>&lt;p&gt;</code></li>
+                                <li>&lt;div id="wrapper"&gt;</li>
+                                <li>Anchor pseudo classes</li>
+                                <li>Style the main menu - &lt;nav id="menu"&gt;</li>
+                                <li>Style the article headings - &lt;header class="post"&gt;</li>
+                            </ul>
+                        </li>
+                        <li>Validate the CSS</li>
+                    </ol>
+
+                    <!-- Week 4 Banner -->
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="" alt=" " /> <!-- Source file of the image -->
+                        <figcaption> <br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <p></p>
+
+                    <p>Here is a view of my site concluding week 4:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week4-finish.png" alt="My Learning Journal Week 4 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 4 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <!-- End of article contentn-->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a id="w4-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial04.html">
+                                Tutorial Week 4
+                            </a></li>
+                            <li><a id="w3-2" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
+                                Understanding more about <code>&lt;blockquotes&gt;</code>
+                            </a></li>
+                            <li><a id="w3-3" href="http://html5doctor.com/blockquote-q-cite/">
+                                More <code>&lt;blockquotes&gt;</code> reading
+                            </a></li>
+                        </ol>
+                    </aside>
+                </article>
+
             </main><!--Close main page content --> 
  
             <footer> <!-- Footer content -->
