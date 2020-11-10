@@ -6,6 +6,9 @@
         <!-- Temporary Styling for Images -->
         <style>
             img {max-width: 800px; height: auto;}
+            table, th, td {
+                border: 1px solid black;
+            }
         </style>
     </head> <!-- End of Head -->
     
@@ -245,8 +248,8 @@
 
                     <!-- Week 3 Banner -->
                     <figure> <!-- Image that illustrates the web page content -->
-                        <img src="images/huxley-building.jpeg" alt="A picture of the Huxley building" /> <!-- Source file of the image -->
-                        <figcaption>The Huxley building on Moulscoomb campus<br /> <!-- Illustration caption -->
+                        <img src="images/week3-table.png" alt="A screenshot of my timetable" /> <!-- Source file of the image -->
+                        <figcaption>My timetable from week 3<br /> <!-- Illustration caption -->
                         <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
                         </figcaption> <!-- End Caption-->
                     </figure> <!-- End figure markup -->
@@ -296,7 +299,7 @@
 
                     <p>Tables</p>
 
-                    <table border="1">
+                    <table>
                         <tr>
                             <th>Day/time</th>
                             <th>Monday</th>
@@ -404,6 +407,26 @@
                         </a>
                         The W3C has made an HTML5 logo that you can add to your web page. The HTML5 logo is licensed under Creative Commons Attribution 3.0 — so it is free to use.
                     </p>
+
+                    <p>To conclude the tutorial I run the validator to ensure there were no mistakes and I received the following error</p>
+
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/border-1-error.png" alt="Validator error of border=1 screenshot" /> <!-- Source file of the image -->
+                        <figcaption>Validation error on table for border<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <p>I initially removed the <code>border=1</code> property but that removed the border and made reading the table far more difficult.</p>
+
+                    <p>Since HTML5 moves all styling out of HTML and into CSS, I had to create table lines using my temporary css block at the top of the page. This allowed me to bring back the same styling using the following code</p>
+
+                    <pre><code>table, th, td {
+    border: 1px solid black;
+}
+                    </code></pre>
+
+                    <p>With this new change I ran the validator and received no errors or warnings. I have now added multiple styles to the head of my document and cant wait to create the CSS file, link it and start styling my site next week!</p>
 
                     <p>Here is a view of my site concluding week 3:</p>
                                         
