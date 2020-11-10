@@ -1,36 +1,68 @@
 @charset "UTF-8";
 
+/* Root Colour Scheme */
+:root {
+    --header-footer-color: #222222;
+    --page-color: #2a2a2a;
+    --border-color: #d4d2d5;
+
+    /* General Palet */
+    --primary-color: #1382CC;
+    --secondary-color: #1F5880;
+    --alternate-color: #E1E5F2;
+
+    /* Font Colours */
+    --heading-color: #FCFCFC;
+    --font-color: #D4D2D5;
+    --span-color: #D4D2D5;
+    --footer-color: #E1E5F2;
+
+    /* Transition Speeds */
+    --hover-transition: .2s;
+}
+
+/* Applied Smoothing and Scroll Behaviour to All Elements */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    
+    scroll-behavior: smooth;
+}
+
 /* Main Element Styles */
 html {
-
+    background-color: var(--header-footer-color);
 }
 
 body {
-    background-color: #F0F0F0;
     font-family: Verdana, Geneva, sans-serif;
-    color: #333;
+    color: var(--font-color);
     font-size: 16px;
     line-height: 20px;
 }
 
 #wrapper {
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #FFF;
-    padding-right: 10px;
-    padding-left: 10px;
+    background-color: var(--page-color);
 }
 
-main { }
-article { }
+header { }
+
+main {
+    background-color: var(--page-color);
+}
+
+article {
+    padding: 20px;
+}
 aside { }
 footer { }
 
 .post {
     margin-top: 2px;
     margin-bottom: 2px;
-    background-color: #CCC;
 }
 
 nav	{ }
@@ -48,12 +80,12 @@ nav	{ }
     padding: 5px;
     margin-right: 4px;
     text-decoration: none;
-    border: 2px solid #0090D2;
+    border: 2px solid var(--primary-color);
     border-radius: 3px;
 }
 .menu a:hover {
-    background-color: #0090D2;
-    color: #FFF;
+    background-color: var(--heading-color);
+    color: var(--header-footer-color);
 }
 /* Headings */
 h1 {
@@ -96,7 +128,7 @@ img	{
 a { }
 
 a:link, a:visited, a:active	{
-color: #0090D2;
+    color: #0090D2;
 }
 
 a:link	{ }
@@ -112,5 +144,5 @@ a:active { }
 
 /* Table Formatting */
 table, th, td {
-border: 1px solid black;
+    border: 1px solid var(--border-color);
 }
