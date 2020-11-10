@@ -1,7 +1,10 @@
+@charset "UTF-8";
+
+/* Main Element Styles */
 html {
 
 }
-/*sections------------------------------------------------------------------- */
+
 body {
     background-color: #F0F0F0;
     font-family: Verdana, Geneva, sans-serif;
@@ -9,6 +12,7 @@ body {
     font-size: 16px;
     line-height: 20px;
 }
+
 #wrapper {
     max-width: 1000px;
     margin-right: auto;
@@ -17,25 +21,22 @@ body {
     padding-right: 10px;
     padding-left: 10px;
 }
-main  {
-}
-article	{
-}
-aside	{
-}
-footer {
-}
-header {
-}
+
+main { }
+article { }
+aside { }
+footer { }
+
 .post {
     margin-top: 2px;
     margin-bottom: 2px;
     background-color: #CCC;
 }
-nav	{
-}
-.menu	{
-}
+
+nav	{ }
+
+.menu { }
+
 .menu li {
     list-style-type: none;
     font-size: 18px;
@@ -54,79 +55,60 @@ nav	{
     background-color: #0090D2;
     color: #FFF;
 }
-/*headings------------------------------------------------------------------- */
-h1	{
+/* Headings */
+h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #F60;
     font-size: 36px;
     line-height: 50px;
 }
-h2	{
-}
-h3 	{
-}
-/*grouping------------------------------------------------------------------- */
-p	{
-}
-blockquote	{
-}
-/*lists---------------------------------------------------------------------- */
-ul	{
-}
-li	{
-}
-ol	{
-}
-dl	{
-}
-dt	{
-}
-dd	{
-}
-/*text------------------------------------------------------------------------ */
-em	{
-}
-strong	{
-}
-small	{
-}
-cite	{
-}
-time	{
-}
-/*image----------------------------------------------------------------------- */
-figure	{
-}
-figcaption	{
-}
-img	{
-max-width: 800px; height: auto;
-}
-/*anchors--------------------------------------------------------------------- */
-a {
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+/* Grouping */
+p { }
+blockquote { }
+/* Lists */
+ul { }
+li { }
+ol { }
+dl { }
+dt { }
+dd { }
+/* Text */
+em { }
+strong { }
+small { }
+cite { }
+time { }
 
+/* Images */
+figure { }
+figcaption { }
+
+img	{
+    max-width: 800px;
+    height: auto;
 }
+/* Anchors */
+a { }
 
 a:link, a:visited, a:active	{
 color: #0090D2;
 }
 
-a:link	{
+a:link	{ }
 
-}
-
-a:visited {
-
-}
+a:visited { }
 
 a:hover {
-color: #0063A6;
-text-decoration: none;
+    color: #0063A6;
+    text-decoration: none;
 }
 
-a:active {
-
-}
+a:active { }
 
 /* Table Formatting */
 table, th, td {
