@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Source+Code+Pro:wght@300;400&display=swap');
+
 /* Root Colour Scheme */
 :root {
     --header-footer-color: #222222;
@@ -35,17 +37,13 @@
 /* Main Element Styles */
 html {
     background-color: var(--header-footer-color);
+    font-size: 18px;
 }
 
 body {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--font-color);
-    font-size: 16px;
-    line-height: 20px;
-}
-
-#wrapper {
-    background-color: var(--page-color);
+    letter-spacing: .05rem;
 }
 
 header { }
@@ -55,94 +53,200 @@ main {
 }
 
 article {
-    padding: 20px;
+    padding: 1.11rem;
 }
+
 aside { }
+
 footer { }
 
 .post {
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin: 0;
 }
 
 nav	{ }
 
 .menu { }
 
-.menu li {
+.menu ul {
     list-style-type: none;
-    font-size: 18px;
-    margin-left: 0px;
-    margin-bottom: 20px;
+    display: flex;
+    width: auto;
+}
+
+.menu li {
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: .6rem;
 }
 .menu a {
-    color: #000;
-    padding: 5px;
-    margin-right: 4px;
     text-decoration: none;
-    border: 2px solid var(--primary-color);
-    border-radius: 3px;
 }
 .menu a:hover {
-    background-color: var(--heading-color);
-    color: var(--header-footer-color);
+    color: var(--font-color);
 }
 /* Headings */
 h1 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #F60;
-    font-size: 36px;
-    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--heading-color);
+    letter-spacing: .2rem;
+    margin: .3rem 0 .6rem 0;
 }
-h2 { }
-h3 { }
-h4 { }
-h5 { }
-h6 { }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: 1.3rem 0 .4rem 0;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: 1.3rem 0 .4rem 0;
+}
+
+h6 { margin: 0; }
+
+
 /* Grouping */
-p { }
-blockquote { }
+p {
+    line-height: 1.5;
+    letter-spacing: .05rem;
+    margin: .75rem 0 .75rem 0;
+}
+
+blockquote {  }
+
+pre {
+    border: 1px solid rgba(212,210,213, .2);
+    border-radius: 4px;
+    padding: .7rem 0px .7rem 2rem;
+    background-color: var(--header-footer-color);
+    color: var(--alternate-color);
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
+pre code {
+    padding: 0;
+    border-radius: 0;
+    line-height: 1.2rem;
+}
+
 /* Lists */
 ul { }
-li { }
+
 ol { }
+
+li {
+    margin-top: .5rem; margin-bottom: .5rem;
+    line-height: 1.3rem;
+}
+
 dl { }
+
 dt { }
+
 dd { }
+
+
 /* Text */
-em { }
-strong { }
+em { color: var(--heading-color); }
+
+strong {
+    font-weight: 600;
+    color: var(--border-color);
+}
+
 small { }
+
 cite { }
+
 time { }
 
+code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--header-footer-color);
+    padding: .07rem .1rem .07rem .1rem;
+    border-radius: 4px;
+}
+
 /* Images */
-figure { }
+figure { margin: 0; }
+
 figcaption { }
 
 img	{
     max-width: 800px;
+    width: 100%;
     height: auto;
 }
+
+
 /* Anchors */
 a { }
 
 a:link, a:visited, a:active	{
-    color: #0090D2;
+    color: var(--primary-color);
 }
 
+/* Link Clickable Action */
 a:link	{ }
 
+/* Previously Clicked Action */
 a:visited { }
 
+/* On Hover Action */
 a:hover {
-    color: #0063A6;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
-a:active { }
+/* On Hold Action */
+a:active {
+    color: var(--font-color);
+}
 
 /* Table Formatting */
+table {
+    width: 100%;
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
 table, th, td {
     border: 1px solid var(--border-color);
+}
+
+
+article header p { 
+    margin: 0;
 }
