@@ -68,22 +68,22 @@ nav	{ }
 
 .menu { }
 
-.menu ul {
+nav ul {
     list-style-type: none;
     display: flex;
     width: auto;
 }
 
-.menu li {
+nav li {
     display: block;
     margin: 0;
     border: 0;
     padding: .6rem;
 }
-.menu a {
+nav a {
     text-decoration: none;
 }
-.menu a:hover {
+nav a:hover {
     color: var(--font-color);
 }
 /* Headings */
