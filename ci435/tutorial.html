@@ -2,61 +2,79 @@
 <html lang="en"><!--default language of the document content -->
 	
     <head>
-		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
-		<title>Learning Journal template</title><!--web page title -->
+		<meta charset="utf-8"> <!--Unicode character encoding for the document -->
+		<title>Jazer's Lockdown Study Tips</title> <!--Page Title -->
+		<!-- Normalize css to ensure the same style is used as a base across all browsers -->
+		<link href="css/normalize.css" rel="stylesheet" />
+		<!-- My Stylesheet -->
+		<link href="css/stylesheet.css" rel="stylesheet /">
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 <body>
-<!--Markup all web page content inside the 'body' tags -->
-	<div id="wrapper">
-	<!--The 'wrapper' contains all the page content-->
-	
-    <header><!--The main heading for the page -->
-		<h1>page heading</h1>
-		<h2>sub-heading</h2>
-	</header>
-	
-    <nav><!--The primary navigation for the page -->
-	<ul>
-		<li><a href="">Learning Journal</a></li>
-		<li><a href="">Tutorial</a></li>
-        <li><a href="">Contact me</a></li>
-	</ul>
-	</nav>
-    
-    <main><!--The main page content -->
-        
-        	<h2>Weekly Posts</h2>
-	
-    	<article>
-			<header>
-			<h3>Week 1: ...</h3>
-			</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat, ante lectus 
-porttitor tellus, eget blandit urna nibh a metus. </p>
+	<!--Markup all web page content inside the 'body' tags -->
 
-        <p>Some reference here to my own reading and research, explaining what I have done and what I have learned from it.</p>
-        
-		</article>
-           
-    </main><!--Close main page content --> 
-        
-        <aside>
-        
-        	<h2>References</h2>
-            
-            	<ol>
-                	<li>...</li>
-                    <li>...</li>
-                </ol>
-            
-        </aside>    
- 
-  
+	<header><!--The main heading for the page -->
+		<h1>Study Tips for Lockdown</h1>
+	</header>
+
+	<nav><!--The primary navigation for the page -->
+		<ul>
+			<li><a href="index.html">Learning Journal</a></li>
+			<li><a href="#">Tutorial</a></li>
+			<li><a href="contact.html">Contact me</a></li>
+		</ul>
+	</nav>
+
+	<main><!--The main page content -->
+
+		<h2>Time Management</h2>
+		<h3>Introduction</h3>
+		<p>Being at home during this lockdown must have you struggling with your learning. No classroom holding you prisoner for every hour, no fixed lunchtime and certainly no English class at 1:55pm today.</p>
+
+		<p>Without this structure that school has given us all these years, time management and our usual total disregard for it has made working to our own schedule a big uphill battle.</p>
+
+		<p>I think all of us at one point or anther tried to sit for 6-8 hours straight trying to either cram in as much as we can or had that assignment we left to the last minute but how long do you think you can effectively learn material in a sustained period?</p>
+
+		<p>A minute?<br />An hour?<br />Maybe six?</p>
+
+		<h3>The Pomodoro Technique</h3>
+		<p>A study at the University of Illinois conducted a test to see how long students could absorb and retain information with a variety of solid blocks of time and smaller chunks.<sup><a href="#ref1">1</a></sup></p>
+
+		<p>The results were fascinating. The performance of the groups that worked solidly for 50 minutes declined over the 50 minute period. However, the performance of the group who took a brief break in the middle of the task, remained constant.</p>
+
+		<p>This technique of learning has a name and was coined in the late 1980s by then university student Francesco Cirillo. He was struggling to focus on his studies and feeling overwhelmed, asked himself to commit just 10 minutes of focused study time. He found a tomato (pomodoro in Italian) shaped kitchen timer, and the Pomodoro technique was born.<sup><a href="#ref2">2</a></sup></p>
+
+		<p>Many different sources tell you work/break times however this is completely down to the individual. I personally work well for longer periods and a 45 minute work session can be followed by a 15 minute break; whereas my partner can only focus for 20 minutes and has a 5-10 minutes break. Notice that the ratio of work to break time remains relatively constant.</p>
+
+		<p>Try working on some of you’re homework and make a note of the time you start your learning. As you work, the moment you find that you’re reading/writing/listening and it’s not really going in or you feel that you are seeing the words but you aren’t really learning it; stop and take note of how much time has passed. This will be you’re maximum work period and stretching any further beyond this will give you diminishing returns.</p>
+
+		<p>As for you’re break time, take your work period and divide it by 3. If it seems a bit short, go ahead and round it up. This break time is for you to make that cuppa tea or watch the YouTube video you’ve been itching for. You deserve it for focusing and working hard.</p>
+
+		<p>One of the further stretching things that the pomodoro technique does not quite go into is for at the end of all the work and break sessions. Many think that by this time, its bed time or you are too worn out for anything else. This is the perfect time to give yourself the biggest treat you can given this highly focussed block of your day. I take to playing games and listening to my favorite music playlist.</p>
+
+	</main><!--Close main page content --> 
+
+	<aside>
+
+		<h2>References</h2>
+
+		<ol>
+			<li><a id="ref1" href="https://www.sciencedaily.com/releases/2011/02/110208131529.htm">
+				University of Illinois Study on Focus
+			</a></li>
+			<li><a id="ref2" href="https://francescocirillo.com/products/the-pomodoro-technique">
+				Pomodoro Origins
+			</a></li>
+		</ol>
+
+	</aside>
+
+
 	<footer><!--Footer content -->
-		<small>&copy; 2019, author.</small>
+		<small>&copy; 2020, Jazer Barclay</small>
 	</footer>
 
-	</div><!--Close 'wrapper' div -->
 </body><!--Close 'body' -->
 </html><!--Close 'html' -->
