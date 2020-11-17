@@ -46,7 +46,15 @@ body {
     letter-spacing: .05rem;
 }
 
-header { }
+header {
+    text-align: center;
+    background-color: var(--header-footer-color);
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
 
 main {
     background-color: var(--page-color);
@@ -56,36 +64,157 @@ article {
     padding: 1.11rem;
 }
 
+article header {
+    text-align: left;
+    background-color: transparent;
+}
+
 aside { }
 
 footer { }
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.content {
+    padding: 20px;
+}
 
 .post {
     margin: 0;
 }
 
-nav	{ }
+/* Navigation section */
 
-.menu { }
+nav {
+    /* Fancy Drop Shadow :O */
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,.3);
+    position: relative;
+    width: 100%;
+    z-index: 3;
+}
 
+/* Navigation background (using the unordered list encapsulation) */
 nav ul {
-    list-style-type: none;
-    display: flex;
-    width: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    z-index: -1;
 }
 
-nav li {
+/* Set all item links to display block and set padding */
+nav li a {
     display: block;
-    margin: 0;
-    border: 0;
-    padding: .6rem;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
 }
-nav a {
+
+/* On link hover change colour */
+nav li a:hover,
+nav .menu-btn:hover {
+    color: var(--link-hover-color);
+    transition: var(--hover-transition);
+}
+  
+nav .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
     text-decoration: none;
 }
-nav a:hover {
-    color: var(--font-color);
+  
+/* menu */
+nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
+  
+/* menu icon */
+nav .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+/* Create center hamburger line */
+nav .menu-icon .navicon {
+    background: var(--heading-color);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+/* Create top and bottom hamburger lines */
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+    background: var(--heading-color);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+nav .menu-icon:hover .navicon,
+nav .menu-icon:hover .navicon:after,
+nav .menu-icon:hover .navicon:before {
+    background-color: var(--primary-color);
+}
+
+/* Set bottom hamburger line */
+nav .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+/* Set top hamburger line */
+nav .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+/* Hide Checkbox */
+nav .menu-btn {
+    display: none;
+}
+
+/* Give height to menu so it rolls out on click */
+nav .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+/* Hide Middle Hamburger Line */
+nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+/* Rotate Bottom Hamburger Line */
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+  
+/* Rotate Top Hamburger Line */
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+/* Reset Position to Keep Centered */
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* End of Navigation section */
+
 /* Headings */
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -251,6 +380,51 @@ article header p {
     margin: 0;
 }
 
+#logo {
+    position: relative;
+    float: left;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 0;
+    margin-right: auto;
+    text-decoration: none;
+    color: var(--heading-color);
+}
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/huxley-building.jpeg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 80vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    text-transform: uppercase;
+}
+
+#hero img {
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#hero img{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: ease;
+}
+
+/* Some fun animation using CSS */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
 
 #float-example, #float-example img {
     height: 80px
@@ -260,4 +434,80 @@ article header p {
     width: 80px;
     float: left;
     padding-right: 20px;
+}
+
+/* Contents Card Layout */
+
+.card-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-container a {
+    text-decoration: none;
+}
+
+.card {
+    background-color: var(--header-footer-color);
+    padding: 5px 20px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0px 0px 0px var(--page-color);
+    -webkit-transition: box-shadow .2s ease-out;
+    box-shadow: .8px .9px 3px var(--page-color);
+}
+
+.card:hover{
+    box-shadow: 1px 8px 20px rgba(255, 255, 255, .1);
+   -webkit-transition: box-shadow 0.2s ease-in;
+}
+
+.card * {
+    color: var(--font-color);
+}
+
+.card:hover * {
+    color: var(--primary-color);
+    transition: var(--hover-transition);
+}
+
+.card *:first-child {
+    font-size: 1.8em;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#go-to-top {
+    background-color: var(--header-footer-color);
+    border: 1px solid var(--font-color);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#go-to-top:hover {
+    transition: var(--hover-transition);
+    background-color: var(--font-color);
+}
+
+#go-to-top svg {
+    fill: var(--font-color);
+}
+
+#go-to-top:hover svg {
+    fill: var(--primary-color);
+    transition: var(--hover-transition);
 }

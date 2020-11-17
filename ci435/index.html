@@ -11,29 +11,74 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head> <!-- End of Head -->
     
-    <body><!--Markup all web page content inside the 'body' tags -->
+    <body id="top"><!--Markup all web page content inside the 'body' tags -->
 
-        <!-- Anchor reference point to top of the page -->
-        <a id="top"></a>
+        <!-- Header with logo + navigation -->
+        <header>
+            <nav role="navigation">
+                <a id="logo" href="#">Learning Journal</a>
 
-        <header><!--The main heading for the page -->
-            <h1>Learning Journal</h1>
-            <p>Building a Responsive Site</p>
+                <!-- Checkbox and 'Span Hamburger' Icon -->
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <!-- Unordered List for Menu Items -->
+                <ul class="menu">
+                    <li><a href="#contents">Contents</a></li>
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="tutorial.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <nav class="menu"><!--The primary navigation for the page -->
-            <ul>
-                <li><a href="#">Learning Journal</a></li>
-                <li><a href="tutorial.html">Tutorial</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
         
         <main><!--The main page content -->
         
+            <section id="hero">
+                <div id="hero-container" class="container content">
+                    <img src="images/jb_thumbnail.png" />
+                    <h1>Learning Journal</h1>
+                    <p>CI435 - Introduction to Web Development <br />
+                    A site by Jazer Barclay</p>
+                </div>
+            </section>
+
+            <section id="contents" class="container content">
+                <div id="contents-container" class="card-container">
+                    <a href="#week1" class="card">
+                            <p>Week 1</p>
+                            <img src="images/brighton-domains-screenshot.png" alt="Brighton Domains Homepage Screenshot" />
+                            <p>Setting up brighton domains and creating the first 3 html documents</p>
+                    </a>
+                    <a href="#week2" class="card">
+                            <p>Week 2</p>
+                            <img src="images/huxley-building.jpeg" alt="A picture of the Huxley building" />
+                            <p>Content markup including publication dates, in page navigation, images and email links</p>
+                    </a>
+                    <a href="#week3" class="card">
+                            <p>Week 3</p>
+                            <img src="images/week3-table.png" alt="A screenshot of my timetable" />
+                            <p>More HTML markup with nested lists, tables, quotes and image links</p>
+                    </a>
+                    <a href="#week4" class="card">
+                            <p>Week 4</p>
+                            <img src="images/code-html-css.png" alt="A picture of my css and html code" />
+                            <p>Using external CSS style sheets to influence the layout, design and colours of the web page</p>
+                    </a>
+                    <a href="#week5" class="card">
+                            <p>Week 5</p>
+                            <img src="images/google-fonts-something-old-quote.png" alt="A screenshot of google fonts with the quote 'Show me something old in a new way'" />
+                            <p>Viewport uses, google fonts and floating images</p>
+                    </a>
+                    <a href="#week6" class="card">
+                            <p>Week 6</p>
+                            <img src="" alt="" />
+                            <p></p>
+                    </a>
+                </div>
+            </section>
+
             <h2>Weekly Posts</h2>
     
-            <article>
+            <article id="week1">
                 <header class="post">
                     <h3>Week 1: Brighton Domains Setup</h3>
                     <p>Published on <strong><time datetime="2020-10-07">October 7<sup>th</sup>, 2020</time></strong></p>
@@ -134,7 +179,7 @@
 
             </article>
     
-            <article>
+            <article id="week2">
                 <header class="post">
                     <h3>Week 2: Marking up content</h3>
                     <p>Published on <strong><time datetime="2020-10-14">October 14<sup>th</sup>, 2020</time></strong></p>
@@ -248,7 +293,7 @@
                 </aside>
             </article>
     
-            <article>
+            <article id="week3">
                 <header class="post">
                     <h3>Week 3: More HTML Markup</h3>
                     <p>Published on <strong><time datetime="2020-10-21">October 21<sup>st</sup>, 2020</time></strong></p>
@@ -474,7 +519,7 @@
             </article>
 
             <!-- Week 4 -->
-            <article>
+            <article id="week4">
                 <header class="post">
                     <h3>Week 4: Cascading Style Sheets</h3>
                     <p>Published on <strong><time datetime="2020-10-28">October 28<sup>th</sup>, 2020</time></strong></p>
@@ -600,7 +645,7 @@
             </article>
 
             <!--  Week 5 -->
-            <article>
+            <article id="week5">
                 <header class="post">
                     <h3>Week 5: Tutorial.html and Viewport</h3>
                     <p>Published on <strong><time datetime="2020-11-04">November 4<sup>th</sup>, 2020</time></strong></p>
@@ -686,10 +731,16 @@
         </main><!--Close main page content --> 
  
         <footer> <!-- Footer content -->
-            <p><a href="#top">Go to top</a></p>
             <a href="mailto:jb2139@uni.brighton.ac.uk">Email Jazer Barclay</a>
             <small>&copy; 2020, Jazer Barclay</small>
         </footer>
+
+        <!-- Return to Top -->
+        <a id="go-to-top" href="#top">
+            <svg width="32" height="32" viewBox="0 0 32 32" class="icon" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-up" d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"></path>
+            </svg>
+        </a>
             
     </body><!--Close 'body' -->
 </html><!--Close 'html' -->
