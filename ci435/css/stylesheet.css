@@ -250,3 +250,14 @@ table, th, td {
 article header p { 
     margin: 0;
 }
+
+
+#float-example, #float-example img {
+    height: 80px
+}
+
+#float-example img {
+    width: 80px;
+    float: left;
+    padding-right: 20px;
+}
