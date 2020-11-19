@@ -41,7 +41,7 @@
                 </div>
             </section>
 
-            <section id="contents" class="container content">
+            <section id="contents" class="content">
                 <div id="contents-container" class="card-container">
                     <a href="#week1" class="card">
                             <p>Week 1</p>
@@ -76,662 +76,664 @@
                 </div>
             </section>
 
-            <h2>Weekly Posts</h2>
-    
-            <article id="week1">
-                <header class="post">
-                    <h3>Week 1: Brighton Domains Setup</h3>
-                    <p>Published on <strong><time datetime="2020-10-07">October 7<sup>th</sup>, 2020</time></strong></p>
-                </header>
+            <section id="articles" class="container">
+                <h2>Weekly Posts</h2>
+        
+                <article id="week1">
+                    <header class="post">
+                        <h3>Week 1: Brighton Domains Setup</h3>
+                        <p>Published on <strong><time datetime="2020-10-07">October 7<sup>th</sup>, 2020</time></strong></p>
+                    </header>
 
-                <!-- Main element of article -->
-                <p>For my first week of CI435, I was tasked with: reading our course specification on MyStudies and setting up my brighton.domains account where I will be making my first three HTML pages.<sup><a href="#w1-1">1</a></sup></p>
-                
-                <!-- Week 3 Banner -->
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/brighton-domains-screenshot.png" alt="Brighton Domains Homepage Screenshot" /> <!-- Source file of the image -->
-                    <figcaption>Brighton domains homepage screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <!-- Main element of article -->
+                    <p>For my first week of CI435, I was tasked with: reading our course specification on MyStudies and setting up my brighton.domains account where I will be making my first three HTML pages.<sup><a href="#w1-1">1</a></sup></p>
+                    
+                    <!-- Week 3 Banner -->
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/brighton-domains-screenshot.png" alt="Brighton Domains Homepage Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>Brighton domains homepage screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <h4>Setting up brighton domains</h4>
-                <p>The lab session started with logging into the computers and accessing the MyStudies page. Here I could go to CI435 to view all the information about the web development module.</p>
-                <p>In the module area there are the following sections:</p>
-                <ul>
-                    <li>Module Information which shows the module specification, the teaching plan and link to teaching staff contact details</li>
-                    <li>Reading List -  A list of books we can access virtually to learn more about HTML and CSS</li>
-                    <li>Assessments and Marks - A grading criteria and module guideline</li>
-                    <li>Study Materials -  Where all the content from the lectures is accessible and other learning resources</li>
-                </ul>
-                <p>In the study section, there’s a folder called '<em>SEMESTER 1 study material</em>' where the slides for the previous lectures are available.</p>
-                <p>Under week 1 there is a link to the lecture and another for the lab tutorial site <em>jh1033.bright.domains</em> with instructions for building the website.</p>
-                <p>Starting at the induction and going through setting up brighton.domains. I went to the dashboard tab at the top and logged into my account.</p>
-                <p>Here I can access the file manager to see the files hosted on the server.</p>
-                <p>We were instructed to create a new folder named ‘<em>ci435</em>’ under the public_html folder which is the root folder of the hosted website.</p>
-                <p>Since this is an apache server hosted on a linux system, the folders when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern. Note also that the web page names must also follow this convention.</p>
-                <p>In this new folder we can create a new file named ‘<em>index.html</em>’. This is the default file the server will use when the folder is accessed. Here is where our learning journal site will begin.</p>
+                    <h4>Setting up brighton domains</h4>
+                    <p>The lab session started with logging into the computers and accessing the MyStudies page. Here I could go to CI435 to view all the information about the web development module.</p>
+                    <p>In the module area there are the following sections:</p>
+                    <ul>
+                        <li>Module Information which shows the module specification, the teaching plan and link to teaching staff contact details</li>
+                        <li>Reading List -  A list of books we can access virtually to learn more about HTML and CSS</li>
+                        <li>Assessments and Marks - A grading criteria and module guideline</li>
+                        <li>Study Materials -  Where all the content from the lectures is accessible and other learning resources</li>
+                    </ul>
+                    <p>In the study section, there’s a folder called '<em>SEMESTER 1 study material</em>' where the slides for the previous lectures are available.</p>
+                    <p>Under week 1 there is a link to the lecture and another for the lab tutorial site <em>jh1033.bright.domains</em> with instructions for building the website.</p>
+                    <p>Starting at the induction and going through setting up brighton.domains. I went to the dashboard tab at the top and logged into my account.</p>
+                    <p>Here I can access the file manager to see the files hosted on the server.</p>
+                    <p>We were instructed to create a new folder named ‘<em>ci435</em>’ under the public_html folder which is the root folder of the hosted website.</p>
+                    <p>Since this is an apache server hosted on a linux system, the folders when we later access them on the live URL, are case sensitive so keeping to lower case makes navigation simple as long as we keep to that design pattern. Note also that the web page names must also follow this convention.</p>
+                    <p>In this new folder we can create a new file named ‘<em>index.html</em>’. This is the default file the server will use when the folder is accessed. Here is where our learning journal site will begin.</p>
 
-                <h4>Starting the 3 pages</h4>
-                <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
-                <p>With the contents saved, if I navigated to the url <em>jb2139.brighton.domains/ci435</em>, I could see the copied template live from any device.</p>
-                <p>Next I created the second and third pages for the tutorial and contact pages respectively using the same template from the first (index) page.</p>
-                <p>These were based from the same template however must link back to all there other pages on the site.</p>
-                <p>Though these were based on the same template, they must link back to all the other pages on the site.</p>
-                <p>I used the <code>&lt;a&gt;</code> anchor tag to create links between the different pages and ensured they all worked on every page.</p>
-                <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘<em>hard refresh</em>’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
-                <p>With how the domain hosting is setup, I would create a new subdomain for each project so rather than a subdirectory called <em>ci435</em>, I would make a subdomain ci435.jb2139.brighton.domains. This separation would make for future package management easier should I use wordpress or another content management system.</p>
+                    <h4>Starting the 3 pages</h4>
+                    <p>There was a template provided in the lab tutorial which we were instructed to copy into the contents of the index.html document and save.</p>
+                    <p>With the contents saved, if I navigated to the url <em>jb2139.brighton.domains/ci435</em>, I could see the copied template live from any device.</p>
+                    <p>Next I created the second and third pages for the tutorial and contact pages respectively using the same template from the first (index) page.</p>
+                    <p>These were based from the same template however must link back to all there other pages on the site.</p>
+                    <p>Though these were based on the same template, they must link back to all the other pages on the site.</p>
+                    <p>I used the <code>&lt;a&gt;</code> anchor tag to create links between the different pages and ensured they all worked on every page.</p>
+                    <p>I found that the live version of the site sometimes didn’t update and as a result I found that Chrome has ‘<em>hard refresh</em>’ functionality where holding Shift and clicking the refresh button would force the page to be called rather than using a cached version which was no longer up to date.</p>
+                    <p>With how the domain hosting is setup, I would create a new subdomain for each project so rather than a subdirectory called <em>ci435</em>, I would make a subdomain ci435.jb2139.brighton.domains. This separation would make for future package management easier should I use wordpress or another content management system.</p>
 
-                <h4>W3C validation</h4>
-                <p>As a final step to our first week lab session, we needed to test that our code conformed to the W3C standards for HTML5.</p>
-                <p>My website index.html, tutorial.html and contact.html all gave no errors and no warnings.</p>
-                <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.<sup><a href="#w1-2">2</a></sup></p>
+                    <h4>W3C validation</h4>
+                    <p>As a final step to our first week lab session, we needed to test that our code conformed to the W3C standards for HTML5.</p>
+                    <p>My website index.html, tutorial.html and contact.html all gave no errors and no warnings.</p>
+                    <p>I checked the next week’s lab page and we will be covering HTML markup such as time, lists, anchors, images and email links.<sup><a href="#w1-2">2</a></sup></p>
 
-                <!-- BONUS SECTION -->
-                <h4>Further learning</h4>
-                <p>I notices when writing up this section that there references are in an aside element only in the wrapper rather than per section. I did some searching for if the HTML5 standard recommends only a single aside element however using one per article is accepted as good practice. The aside element is used to identify content that is related to the primary content of the webpage, but does not constitute the primary content of the page.<sup><a href="#w1-3">3</a></sup></p>
-                <p>Since testing the web pages, I have added my code to Github where all changes are stored and kept backed up. By hosting my code here, I can keep track of all the weekly changes and revert my code should I break something and want to go back to the last working version.<sup><a href="#w1-4">4</a></sup></p>
-                <p>Downloaded the code from GitHub to my personal laptop where I could make local changes without constantly updating the web page. I’ve found this useful when working off-line when commuting and also prefer the interface of Visual Studio Code which is the editor I use for programming.<sup><a href="#w1-5">5</a></sup></p>
-                <p>Furthermore I have started to use FileZilla to upload my code since the GitHub action cannot upload automatically due to how the SFTP server is configured.<sup><a href="#w1-6">6</a></sup></p>
-                
-                <p>In summary, this week I learned how to:</p>
-                <ol>
-                    <li>Set up a folder for my website on my Brighton Domains workspace</li>
-                    <li>Link two pages together with a navigation menu using a relative link</li>
-                    <li>Create links to external websites using an absolute link</li>
-                    <li>When to use the <code>h1</code> and <code>h2</code> tags</li>
-                    <li>Update the web page title</li>
-                    <li>Use the W3C validator to validate HTML documents</li>
-                </ol>
-                <p>And here is a view of my site concluding week 1:</p>
-                                    
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/week1-finish.png" alt="My Learning Journal Week 1 Screenshot" /> <!-- Source file of the image -->
-                    <figcaption>My Learning Journal Week 1 Screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
-                
-                <!-- End of article content -->
-                <aside>
-                    <h2>References</h2>
+                    <!-- BONUS SECTION -->
+                    <h4>Further learning</h4>
+                    <p>I notices when writing up this section that there references are in an aside element only in the wrapper rather than per section. I did some searching for if the HTML5 standard recommends only a single aside element however using one per article is accepted as good practice. The aside element is used to identify content that is related to the primary content of the webpage, but does not constitute the primary content of the page.<sup><a href="#w1-3">3</a></sup></p>
+                    <p>Since testing the web pages, I have added my code to Github where all changes are stored and kept backed up. By hosting my code here, I can keep track of all the weekly changes and revert my code should I break something and want to go back to the last working version.<sup><a href="#w1-4">4</a></sup></p>
+                    <p>Downloaded the code from GitHub to my personal laptop where I could make local changes without constantly updating the web page. I’ve found this useful when working off-line when commuting and also prefer the interface of Visual Studio Code which is the editor I use for programming.<sup><a href="#w1-5">5</a></sup></p>
+                    <p>Furthermore I have started to use FileZilla to upload my code since the GitHub action cannot upload automatically due to how the SFTP server is configured.<sup><a href="#w1-6">6</a></sup></p>
+                    
+                    <p>In summary, this week I learned how to:</p>
                     <ol>
-                        <li><a id="w1-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial01/tutorial01.html">
-                            Tutorial Week 1
-                        </a></li>
-                        <li><a id="w1-2" href="http://validator.w3.org">
-                            W3C Markup Validation Service
-                        </a></li>
-                        <li><a id="w1-3" href="https://html.com/tags/aside">
-                            Aside Element Reference
-                        </a></li>
-                        <li><a id="w1-4" href="Https://github.com/jazerbarclay/ci435">
-                            My GitHub Repository
-                        </a></li>
-                        <li><a id="w1-5" href="https://code.visualstudio.com/">
-                            Visual Studio Code Website
-                        </a></li>
-                        <li><a id="w1-6" href="https://filezilla-project.org/">
-                            FileZilla Website
-                        </a></li>
+                        <li>Set up a folder for my website on my Brighton Domains workspace</li>
+                        <li>Link two pages together with a navigation menu using a relative link</li>
+                        <li>Create links to external websites using an absolute link</li>
+                        <li>When to use the <code>h1</code> and <code>h2</code> tags</li>
+                        <li>Update the web page title</li>
+                        <li>Use the W3C validator to validate HTML documents</li>
                     </ol>
-                </aside>
+                    <p>And here is a view of my site concluding week 1:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week1-finish.png" alt="My Learning Journal Week 1 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 1 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+                    
+                    <!-- End of article content -->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a id="w1-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial01/tutorial01.html">
+                                Tutorial Week 1
+                            </a></li>
+                            <li><a id="w1-2" href="http://validator.w3.org">
+                                W3C Markup Validation Service
+                            </a></li>
+                            <li><a id="w1-3" href="https://html.com/tags/aside">
+                                Aside Element Reference
+                            </a></li>
+                            <li><a id="w1-4" href="Https://github.com/jazerbarclay/ci435">
+                                My GitHub Repository
+                            </a></li>
+                            <li><a id="w1-5" href="https://code.visualstudio.com/">
+                                Visual Studio Code Website
+                            </a></li>
+                            <li><a id="w1-6" href="https://filezilla-project.org/">
+                                FileZilla Website
+                            </a></li>
+                        </ol>
+                    </aside>
 
-            </article>
-    
-            <article id="week2">
-                <header class="post">
-                    <h3>Week 2: Marking up content</h3>
-                    <p>Published on <strong><time datetime="2020-10-14">October 14<sup>th</sup>, 2020</time></strong></p>
-                </header>
-                <!-- Main element of article -->
-                <p>This week our objective was to <sup><a href="#w2-1">1</a></sup>:</p>
-                <ol>
-                    <li>Add a publication date to each post</li>
-                    <li>Add a list to a post</li>
-                    <li>Create in-page navigation links</li>
-                    <li>Add a copyright-free image</li>
-                    <li>Create an email link</li>
-                </ol>
-
-                <!-- Week 2 Banner -->
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/huxley-building.jpeg" alt="A picture of the Huxley building" /> <!-- Source file of the image -->
-                    <figcaption>The Huxley building on Moulscoomb campus<br /> <!-- Illustration caption -->
-                    <small>Photo &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
-
-                <h4>Adding publication dates</h4>
-                <p>The publication date uses the HTML5 element <code>&lt;time&gt;</code> . I checked the Mozilla documentation for the time element and the <code>datetime</code> attribute is a machine-readable format that improves search engine results.<sup><a href=“#w2-2”>2</a></sup></p>
-                <p>I added this new publication date to each article in their <code>&lt;header&gt;</code> elements and updated both the display text as well as the <code>datetime</code> attribute. I will look into adding a colour to these elements in the future to ensure they stand out.</p>
-
-                <h4>Unordered and ordered lists</h4>
-                <p>Next I used an unordered list <code>&lt;ul&gt;</code> at the top of the first week post for the module sections and an ordered list <code>&lt;ol&gt;</code> at the end of the first week post for I learned in our first week. Each list uses an encompassing tag with list items <code>&lt;li&gt;</code> within to represent each point or number.</p>
-                <p>I also used the <code>&lt;code&gt;</code> tag to cover the code elements and <code>&lt;em&gt;</code> tags for document names and other important information to emphasize their importance. These elements look a bit plain however I will add more styling to them later on.
-                </p>
-
-                <h4>Navigation links using anchor tags</h4>
-                <p>Next I added a relative link using the same <code>&lt;a&gt;</code> tag by instead of linking to another local site page or an external site page, I added a link to an ID of an element on the same page.</p>
-                <p>I did this by making the anchor’s <em>href</em> link to an element’s ID. I added an anchor element at the top of the page and gave it the ID of <code>#top</code>. By clicking the link, the browser automatically scrolls to the element with the matching ID.</p>
-                <p>Since each ID can/should only be used on a single element, the page should never scroll to the wrong element.</p>
-
-                <h4>Adding images and copyright</h4>
-                <p>After, I had to add a copyright-free image to the weekly posts using the <code>&lt;figure&gt;</code>, <code>img</code> and <code>figcaption</code> tags.</p>
-                <p>The <code>&lt;figure&gt;</code> tag is an image wrapper that illustrates the web page content. Within this element is contained the <code>&lt;img&gt;</code> tag which is the source file of the image. Also within the <code>figure</code> element is the <code>&lt;figcaption&gt;</code> tag which illustrates the source image attached.</p>
-                <p>To ensure the picture was copyright-free, I took a picture of the Huxley building from my iPhone 7 and used that.</p>
-                <p>I added at least a single image to all posts thus far to later be used for banner images. Intend for the website to look its best on all possible screen sizes including mobile and high resolution desktops.</p>
-                <blockquote>Note that I have temporarily added a style block in the header to make images sane for a while since their intended sizes cannot be dynamically be set yet due to no CSS file, no viewport or media queries.</blockquote>
-
-                <h4>Creating email anchor tags</h4>
-                <p>For the email link, I added another anchor tag to my footer with a <code>href</code> that includes the <code>mailto</code> flag to open the user’s default mail application and send me an email.</p>
-                <p>To conclude this week’s tutorial I validated my code on w3.org<sup><a href="#w2-3">3</a></sup> again to ensure I hadn’t made any silly mistakes and that I am conforming to the HTML5 standard. Sure enough it came back with no errors!</p>
-
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/w3-validator-no-errors.png" alt="W3C Validator showing no errors screenshot" /> <!-- Source file of the image -->
-                    <figcaption>W3C Validator showing no errors<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
-
-                <!-- BONUS SECTION -->
-                <h4>Further learning</h4>
-                <p>I was determined to save myself some time by adding automation for deployment and looked into if GitHub actions could, rather than use FTP to send the updated content, use Rsync to sync the files from the GitHub account over to the remote hosting server.</p>
-
-                <p>The server is hosted on a Linux Apache machine, I could use my credentials to SSH into the machine. Sure enough Rsync is available on the box and could upload files that way. I then looked into the GitHub Action to deploy the code and I found this one:<sup><a href="#w2-3">3</a></sup></p>
-                
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/rsync-deploy-action-github.png" alt="GitHub Actions rsync deploy screenshot" /> <!-- Source file of the image -->
-                    <figcaption>GitHub Actions rsync deploy screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
-
-                <p>This looked promising. I unfortunately couldn’t create a <em>deploy</em> user to ensure if anything happened to my GitHub account, they wouldn’t gain full system access however I used secrets for all my credentials and upload destinations to ensure security.</p>
-
-                <p>Finally I had my code uploading without a hitch and I could say goodbye to FileZilla eating into my time having to constantly upload the new files.</p>
-
-                <p>To compare time to deploy between the FTP and RSYNC, FTP took 1 minute on average and didn't delete old removed files. RSYNC completes in 20 seconds even with large payloads and removes the unused files to match the structure in the repository. Definitely a big upgrade!</p>
-
-                <p>I also did some research into the <code>pre</code> tag<sup><a href="#w2-3">3</a></sup> as in future posts, I would very much like to add full blocks of code rather than inline. The <code>pre</code> tag enclosing the <code>code</code> tag like so</p>
-
-<pre><code>&lt;pre&gt;&lt;code&gt;
-    System.out.println();
-&lt;/code&gt;&lt;/pre&gt;</code></pre>
-
-                <p>This way with some future formatting, I could still use the <code>code</code> semantics with a wrapper to ensure it was on its own line with the pre-formatted code maintained!</p>
-
-                <p>Here is a view of my site concluding week 2:</p>
-                                    
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/week2-finish.png" alt="My Learning Journal Week 2 Screenshot" /> <!-- Source file of the image -->
-                    <figcaption>My Learning Journal Week 2 Screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
-
-                <!-- End of article content -->
-                <aside>
-                    <h2>References</h2>
+                </article>
+        
+                <article id="week2">
+                    <header class="post">
+                        <h3>Week 2: Marking up content</h3>
+                        <p>Published on <strong><time datetime="2020-10-14">October 14<sup>th</sup>, 2020</time></strong></p>
+                    </header>
+                    <!-- Main element of article -->
+                    <p>This week our objective was to <sup><a href="#w2-1">1</a></sup>:</p>
                     <ol>
-                        <li><a id="w2-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial02.html">
-                            Tutorial Week 2
-                        </a></li>
-                        <li><a id="w2-2" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">Mozilla 
-                            Time Element
-                        </a></li>
-                        <li><a id="w2-3" href="http://validator.w3.org">
-                            W3C Markup Validation Service
-                        </a></li>
-                        <li><a id="w2-4" href="https://github.com/marketplace/actions/rsync-deployments-action">
-                            Github Actions Rsync Deploy to Server
-                        </a></li>
-                        <li><a id="w2-5" href="https://stackoverflow.com/questions/4611591/code-vs-pre-vs-samp-for-inline-and-block-code-snippets">
-                            Stack Overflow on Inline and Block Code Snippets
-                        </a></li>
+                        <li>Add a publication date to each post</li>
+                        <li>Add a list to a post</li>
+                        <li>Create in-page navigation links</li>
+                        <li>Add a copyright-free image</li>
+                        <li>Create an email link</li>
                     </ol>
-                </aside>
-            </article>
-    
-            <article id="week3">
-                <header class="post">
-                    <h3>Week 3: More HTML Markup</h3>
-                    <p>Published on <strong><time datetime="2020-10-21">October 21<sup>st</sup>, 2020</time></strong></p>
-                </header>
-                <!-- Main element of article -->
-                <p>This week our objectives were to <sup><a href="#w3-1">1</a></sup>:</p>
-                <ol>
-                    <li>Make use of nested lists</li>
-                    <li>Add a table</li>
-                    <li>Quote text</li>
-                    <li>Make an image with a link</li>
-                </ol>
 
-                <!-- Week 3 Banner -->
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/week3-table.png" alt="A screenshot of my timetable" /> <!-- Source file of the image -->
-                    <figcaption>My timetable from week 3<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <!-- Week 2 Banner -->
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/huxley-building.jpeg" alt="A picture of the Huxley building" /> <!-- Source file of the image -->
+                        <figcaption>The Huxley building on Moulscoomb campus<br /> <!-- Illustration caption -->
+                        <small>Photo &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <h4>Make use of nested lists</h4>
-                <p>We have previously used lists in week 2 however we can nest a list <em>within</em> a list to create a sub list. <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> only allow exactly zero or more <code>&lt;li&gt;</code> elements however we can use an <code>&lt;li&gt;</code> element and add a list to it.</p>
+                    <h4>Adding publication dates</h4>
+                    <p>The publication date uses the HTML5 element <code>&lt;time&gt;</code> . I checked the Mozilla documentation for the time element and the <code>datetime</code> attribute is a machine-readable format that improves search engine results.<sup><a href=“#w2-2”>2</a></sup></p>
+                    <p>I added this new publication date to each article in their <code>&lt;header&gt;</code> elements and updated both the display text as well as the <code>datetime</code> attribute. I will look into adding a colour to these elements in the future to ensure they stand out.</p>
 
-                <p>By doing this, we can create more complex lists like the following showing each week <em>and</em> what we covered in each of those weeks thus far.</p>
+                    <h4>Unordered and ordered lists</h4>
+                    <p>Next I used an unordered list <code>&lt;ul&gt;</code> at the top of the first week post for the module sections and an ordered list <code>&lt;ol&gt;</code> at the end of the first week post for I learned in our first week. Each list uses an encompassing tag with list items <code>&lt;li&gt;</code> within to represent each point or number.</p>
+                    <p>I also used the <code>&lt;code&gt;</code> tag to cover the code elements and <code>&lt;em&gt;</code> tags for document names and other important information to emphasize their importance. These elements look a bit plain however I will add more styling to them later on.
+                    </p>
 
-                <ol>
-                    <li>Week 1
-                        <ul>
-                            <li>Set up site folder</li>
-                            <li>Create index.html</li>
-                            <li>Create guide.html</li>
-                            <li>Link files in a lists for navigation</li>
-                        </ul>
-                    </li>
-                    <li>Week 2
-                        <ul>
-                            <li>Add a publication date to each post</li>
-                            <li>Add a list to a post</li>
-                            <li>Create in-page navigation links</li>
-                            <li>Add a copyright-free image</li>
-                            <li>Create an email link</li>
-                        </ul>
-                    </li>
-                </ol>
+                    <h4>Navigation links using anchor tags</h4>
+                    <p>Next I added a relative link using the same <code>&lt;a&gt;</code> tag by instead of linking to another local site page or an external site page, I added a link to an ID of an element on the same page.</p>
+                    <p>I did this by making the anchor’s <em>href</em> link to an element’s ID. I added an anchor element at the top of the page and gave it the ID of <code>#top</code>. By clicking the link, the browser automatically scrolls to the element with the matching ID.</p>
+                    <p>Since each ID can/should only be used on a single element, the page should never scroll to the wrong element.</p>
 
-                <p>We can also create a third type of list called a <em>description list</em>. Like the other lists, we use an encapsulating tag <code>&lt;dl&gt;</code> (description list) and within we have description term <code>&lt;dt&gt;</code>. We also have the term description <code>&lt;dd&gt;</code> which is used to further expand on the term with a long description. This would be useful for something like a glossary of terms with the term as a <code>&lt;dt&gt;</code> and an <code>&lt;dd&gt;</code> containing its description.</p>
+                    <h4>Adding images and copyright</h4>
+                    <p>After, I had to add a copyright-free image to the weekly posts using the <code>&lt;figure&gt;</code>, <code>img</code> and <code>figcaption</code> tags.</p>
+                    <p>The <code>&lt;figure&gt;</code> tag is an image wrapper that illustrates the web page content. Within this element is contained the <code>&lt;img&gt;</code> tag which is the source file of the image. Also within the <code>figure</code> element is the <code>&lt;figcaption&gt;</code> tag which illustrates the source image attached.</p>
+                    <p>To ensure the picture was copyright-free, I took a picture of the Huxley building from my iPhone 7 and used that.</p>
+                    <p>I added at least a single image to all posts thus far to later be used for banner images. Intend for the website to look its best on all possible screen sizes including mobile and high resolution desktops.</p>
+                    <blockquote>Note that I have temporarily added a style block in the header to make images sane for a while since their intended sizes cannot be dynamically be set yet due to no CSS file, no viewport or media queries.</blockquote>
 
-                <dl>
-                    <dt><strong>HTML</strong></dt>
-                        <dd>Hyper-text markup language - markup language used to structure content</dd>
-                    <dt><strong>CSS</strong></dt>
-                        <dd>Cascading stylesheets - used to define presentation of HTML elements</dd>
-                    <dt><strong>JavaScript</strong></dt>
-                        <dd>Scripting language for adding interactive behavior to web pages</dd>
-                </dl>
+                    <h4>Creating email anchor tags</h4>
+                    <p>For the email link, I added another anchor tag to my footer with a <code>href</code> that includes the <code>mailto</code> flag to open the user’s default mail application and send me an email.</p>
+                    <p>To conclude this week’s tutorial I validated my code on w3.org<sup><a href="#w2-3">3</a></sup> again to ensure I hadn’t made any silly mistakes and that I am conforming to the HTML5 standard. Sure enough it came back with no errors!</p>
+
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/w3-validator-no-errors.png" alt="W3C Validator showing no errors screenshot" /> <!-- Source file of the image -->
+                        <figcaption>W3C Validator showing no errors<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <!-- BONUS SECTION -->
+                    <h4>Further learning</h4>
+                    <p>I was determined to save myself some time by adding automation for deployment and looked into if GitHub actions could, rather than use FTP to send the updated content, use Rsync to sync the files from the GitHub account over to the remote hosting server.</p>
+
+                    <p>The server is hosted on a Linux Apache machine, I could use my credentials to SSH into the machine. Sure enough Rsync is available on the box and could upload files that way. I then looked into the GitHub Action to deploy the code and I found this one:<sup><a href="#w2-3">3</a></sup></p>
+                    
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/rsync-deploy-action-github.png" alt="GitHub Actions rsync deploy screenshot" /> <!-- Source file of the image -->
+                        <figcaption>GitHub Actions rsync deploy screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <p>This looked promising. I unfortunately couldn’t create a <em>deploy</em> user to ensure if anything happened to my GitHub account, they wouldn’t gain full system access however I used secrets for all my credentials and upload destinations to ensure security.</p>
+
+                    <p>Finally I had my code uploading without a hitch and I could say goodbye to FileZilla eating into my time having to constantly upload the new files.</p>
+
+                    <p>To compare time to deploy between the FTP and RSYNC, FTP took 1 minute on average and didn't delete old removed files. RSYNC completes in 20 seconds even with large payloads and removes the unused files to match the structure in the repository. Definitely a big upgrade!</p>
+
+                    <p>I also did some research into the <code>pre</code> tag<sup><a href="#w2-3">3</a></sup> as in future posts, I would very much like to add full blocks of code rather than inline. The <code>pre</code> tag enclosing the <code>code</code> tag like so</p>
+
+    <pre><code>&lt;pre&gt;&lt;code&gt;
+        System.out.println();
+    &lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+                    <p>This way with some future formatting, I could still use the <code>code</code> semantics with a wrapper to ensure it was on its own line with the pre-formatted code maintained!</p>
+
+                    <p>Here is a view of my site concluding week 2:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week2-finish.png" alt="My Learning Journal Week 2 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 2 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <!-- End of article content -->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a id="w2-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial02.html">
+                                Tutorial Week 2
+                            </a></li>
+                            <li><a id="w2-2" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">Mozilla 
+                                Time Element
+                            </a></li>
+                            <li><a id="w2-3" href="http://validator.w3.org">
+                                W3C Markup Validation Service
+                            </a></li>
+                            <li><a id="w2-4" href="https://github.com/marketplace/actions/rsync-deployments-action">
+                                Github Actions Rsync Deploy to Server
+                            </a></li>
+                            <li><a id="w2-5" href="https://stackoverflow.com/questions/4611591/code-vs-pre-vs-samp-for-inline-and-block-code-snippets">
+                                Stack Overflow on Inline and Block Code Snippets
+                            </a></li>
+                        </ol>
+                    </aside>
+                </article>
+        
+                <article id="week3">
+                    <header class="post">
+                        <h3>Week 3: More HTML Markup</h3>
+                        <p>Published on <strong><time datetime="2020-10-21">October 21<sup>st</sup>, 2020</time></strong></p>
+                    </header>
+                    <!-- Main element of article -->
+                    <p>This week our objectives were to <sup><a href="#w3-1">1</a></sup>:</p>
+                    <ol>
+                        <li>Make use of nested lists</li>
+                        <li>Add a table</li>
+                        <li>Quote text</li>
+                        <li>Make an image with a link</li>
+                    </ol>
+
+                    <!-- Week 3 Banner -->
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week3-table.png" alt="A screenshot of my timetable" /> <!-- Source file of the image -->
+                        <figcaption>My timetable from week 3<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
+
+                    <h4>Make use of nested lists</h4>
+                    <p>We have previously used lists in week 2 however we can nest a list <em>within</em> a list to create a sub list. <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> only allow exactly zero or more <code>&lt;li&gt;</code> elements however we can use an <code>&lt;li&gt;</code> element and add a list to it.</p>
+
+                    <p>By doing this, we can create more complex lists like the following showing each week <em>and</em> what we covered in each of those weeks thus far.</p>
+
+                    <ol>
+                        <li>Week 1
+                            <ul>
+                                <li>Set up site folder</li>
+                                <li>Create index.html</li>
+                                <li>Create guide.html</li>
+                                <li>Link files in a lists for navigation</li>
+                            </ul>
+                        </li>
+                        <li>Week 2
+                            <ul>
+                                <li>Add a publication date to each post</li>
+                                <li>Add a list to a post</li>
+                                <li>Create in-page navigation links</li>
+                                <li>Add a copyright-free image</li>
+                                <li>Create an email link</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p>We can also create a third type of list called a <em>description list</em>. Like the other lists, we use an encapsulating tag <code>&lt;dl&gt;</code> (description list) and within we have description term <code>&lt;dt&gt;</code>. We also have the term description <code>&lt;dd&gt;</code> which is used to further expand on the term with a long description. This would be useful for something like a glossary of terms with the term as a <code>&lt;dt&gt;</code> and an <code>&lt;dd&gt;</code> containing its description.</p>
+
+                    <dl>
+                        <dt><strong>HTML</strong></dt>
+                            <dd>Hyper-text markup language - markup language used to structure content</dd>
+                        <dt><strong>CSS</strong></dt>
+                            <dd>Cascading stylesheets - used to define presentation of HTML elements</dd>
+                        <dt><strong>JavaScript</strong></dt>
+                            <dd>Scripting language for adding interactive behavior to web pages</dd>
+                    </dl>
 
 
-                <h4>Adding a table</h4>
-                <p>Next we look at creating a new table. I remember the old days back in 2007 taking IT in secondary school and nothing aligning correctly. It was the wild west with people recommending tables for structuring a whole site and floating elements left to make them sit side by side. Thank goodness those days are long gone and HTML5 and CSS3 solved this with CSS grid!</p>
+                    <h4>Adding a table</h4>
+                    <p>Next we look at creating a new table. I remember the old days back in 2007 taking IT in secondary school and nothing aligning correctly. It was the wild west with people recommending tables for structuring a whole site and floating elements left to make them sit side by side. Thank goodness those days are long gone and HTML5 and CSS3 solved this with CSS grid!</p>
 
-                <p>Back to the point, we can create a table using the <code>table</code> tag and within it, add table rows <code>tr</code>, table headers <code>th</code> for the headers and table data <code>td</code> for the table cells.</p>
+                    <p>Back to the point, we can create a table using the <code>table</code> tag and within it, add table rows <code>tr</code>, table headers <code>th</code> for the headers and table data <code>td</code> for the table cells.</p>
 
-                <p>Since tables don't have any styling, we need to add <code>border="1"</code> in order to add a border around each cell and the table as a whole. This I know has been deprecated in favour of using CSS to style it. After all , HTML should be the structure containing the content and the CSS only for the styling.</p>
+                    <p>Since tables don't have any styling, we need to add <code>border="1"</code> in order to add a border around each cell and the table as a whole. This I know has been deprecated in favour of using CSS to style it. After all , HTML should be the structure containing the content and the CSS only for the styling.</p>
 
-                <p>Below is an example of a table using my university timetable of lectures and lab sessions.</p>
+                    <p>Below is an example of a table using my university timetable of lectures and lab sessions.</p>
 
-                <table>
-                    <tr>
-                        <th>Day/time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                    </tr>
-                    <tr>
-                        <td>9am-10am</td>
-                        <td></td>
-                        <td>CI404 Lecture</td>
-                        <td>CI435 Lab</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>10am-11am</td>
-                        <td></td>
-                        <td>CI404 Lecture</td>
-                        <td>CI453 Lab</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11am-12pm</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>12pm-1pm</td>
-                        <td>CI401 Seminar</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1pm-2pm</td>
-                        <td></td>
-                        <td>CI453 Lecture</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2pm-3pm</td>
-                        <td></td>
-                        <td>CI401 Lecture</td>
-                        <td></td>
-                        <td>CI404 Lab</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>3pm-4pm</td>
-                        <td></td>
-                        <td></td>
-                        <td>CI401 Lab</td>
-                        <td>CI404 Lab</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>4pm-5pm</td>
-                        <td></td>
-                        <td>CI405 Lecture</td>
-                        <td></td>
-                        <td>CI405 Lab</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>5pm-6pm</td>
-                        <td></td>
-                        <td>CI435 Lecture</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                    <table>
+                        <tr>
+                            <th>Day / Time</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thur</th>
+                            <th>Fri</th>
+                        </tr>
+                        <tr>
+                            <td>9am - 10am</td>
+                            <td></td>
+                            <td>CI404 Lecture</td>
+                            <td>CI435 Lab</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10am - 11am</td>
+                            <td></td>
+                            <td>CI404 Lecture</td>
+                            <td>CI453 Lab</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11am - 12pm</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12pm - 1pm</td>
+                            <td>CI401 Seminar</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1pm - 2pm</td>
+                            <td></td>
+                            <td>CI453 Lecture</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2pm - 3pm</td>
+                            <td></td>
+                            <td>CI401 Lecture</td>
+                            <td></td>
+                            <td>CI404 Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3pm - 4pm</td>
+                            <td></td>
+                            <td></td>
+                            <td>CI401 Lab</td>
+                            <td>CI404 Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4pm - 5pm</td>
+                            <td></td>
+                            <td>CI405 Lecture</td>
+                            <td></td>
+                            <td>CI405 Lab</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5pm - 6pm</td>
+                            <td></td>
+                            <td>CI435 Lecture</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
 
-                <p>To note on this table, I have removed the <code>border="1"</code> and added the border in my temporary style tag in the header to conform with the HTML5 standard shown in the validator. I do understand that using CSS in the HTML document is bad practices however we will be working with CSS in the next week's tutorial. I will move this code next week.</p>
+                    <p>To note on this table, I have removed the <code>border="1"</code> and added the border in my temporary style tag in the header to conform with the HTML5 standard shown in the validator. I do understand that using CSS in the HTML document is bad practices however we will be working with CSS in the next week's tutorial. I will move this code next week.</p>
 
-                <h4>Quoting text using &lt;blockquote&gt;</h4>
-                <p>As this is a journal/blog, we will undoubtedly be using references and quoting the source material is very useful. For this I can use the <code>&lt;blockquote&gt;</code> element to wrap a referenced quote and its source<sup><a href="#w3-2">2</a> <a href="#w3-3">3</a></sup>. An example of a cited reference with a back-link to the source I have included a quote to the <code>aside</code> element from the w3.org website</p>
+                    <h4>Quoting text using &lt;blockquote&gt;</h4>
+                    <p>As this is a journal/blog, we will undoubtedly be using references and quoting the source material is very useful. For this I can use the <code>&lt;blockquote&gt;</code> element to wrap a referenced quote and its source<sup><a href="#w3-2">2</a> <a href="#w3-3">3</a></sup>. An example of a cited reference with a back-link to the source I have included a quote to the <code>aside</code> element from the w3.org website</p>
 
-                <blockquote> <!-- A Quote -->
-                    <p> <!-- Quote Paragraph -->
-                        The aside element represents a section of a page that consists of content that is tangentially related to the content of the parenting sectioning content, and which could be considered separate from that content.
+                    <blockquote> <!-- A Quote -->
+                        <p> <!-- Quote Paragraph -->
+                            The aside element represents a section of a page that consists of content that is tangentially related to the content of the parenting sectioning content, and which could be considered separate from that content.
+                        <p>
+                        <footer> <!-- Footer for cite reference -->
+                            <cite> <!-- Cited Link Reference -->
+                                - <a href="https://www.w3.org/TR/html51/sections.html#the-aside-element">W3C standards for web design</a>
+                            </cite>
+                        </footer>
+                    </blockquote> <!-- End Block Quote-->
+
+
+                    <h4>Making an image link to a resource</h4>
+                    <p>Moving onto more advanced anchor elements. We can wrap any element in anchor tags to make the child elements link to a given source much like our text does in a standard anchor element. Here we can make a new paragraph containing an anchor link that has an image as its clickable asset.</p>
+
+                    <p>In this example I use the W3C HTML5 logo with CSS styling logo </p>
+
                     <p>
-                    <footer> <!-- Footer for cite reference -->
-                        <cite> <!-- Cited Link Reference -->
-                            - <a href="https://www.w3.org/TR/html51/sections.html#the-aside-element">W3C standards for web design</a>
-                        </cite>
-                    </footer>
-                </blockquote> <!-- End Block Quote-->
+                        <a href="http://www.w3.org/html/logo/">
+                            <img src="https://www.w3.org/html/logo/badge/html5-badge-v-css3.png" alt="HTML5 logo" />
+                        </a>
+                        The W3C has made an HTML5 logo that you can add to your web page. The HTML5 logo is licensed under Creative Commons Attribution 3.0 — so it is free to use.
+                    </p>
 
+                    <p>To conclude the tutorial I run the validator to ensure there were no mistakes and I received the following error</p>
 
-                <h4>Making an image link to a resource</h4>
-                <p>Moving onto more advanced anchor elements. We can wrap any element in anchor tags to make the child elements link to a given source much like our text does in a standard anchor element. Here we can make a new paragraph containing an anchor link that has an image as its clickable asset.</p>
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/border-1-error.png" alt="Validator error of border=1 screenshot" /> <!-- Source file of the image -->
+                        <figcaption>Validation error on table for border<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <p>In this example I use the W3C HTML5 logo with CSS styling logo </p>
+                    <p>I initially removed the <code>border=1</code> property but that removed the border and made reading the table far more difficult.</p>
 
-                <p>
-                    <a href="http://www.w3.org/html/logo/">
-                        <img src="https://www.w3.org/html/logo/badge/html5-badge-v-css3.png" alt="HTML5 logo" />
-                    </a>
-                    The W3C has made an HTML5 logo that you can add to your web page. The HTML5 logo is licensed under Creative Commons Attribution 3.0 — so it is free to use.
-                </p>
+                    <p>Since HTML5 moves all styling out of HTML and into CSS, I had to create table lines using my temporary css block at the top of the page. This allowed me to bring back the same styling using the following code</p>
 
-                <p>To conclude the tutorial I run the validator to ensure there were no mistakes and I received the following error</p>
+    <pre><code>table, th, td {
+        border: 1px solid black;
+    }</code></pre>
 
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/border-1-error.png" alt="Validator error of border=1 screenshot" /> <!-- Source file of the image -->
-                    <figcaption>Validation error on table for border<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <p>With this new change I ran the validator and received no errors or warnings. I have now added multiple styles to the head of my document and cant wait to create the CSS file, link it and start styling my site next week!</p>
 
-                <p>I initially removed the <code>border=1</code> property but that removed the border and made reading the table far more difficult.</p>
+                    <p>Here is a view of my site concluding week 3:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week3-finish.png" alt="My Learning Journal Week 3 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 3 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <p>Since HTML5 moves all styling out of HTML and into CSS, I had to create table lines using my temporary css block at the top of the page. This allowed me to bring back the same styling using the following code</p>
+                    <!-- End of article content -->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a id="w3-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial03/tutorial03.html">
+                                Tutorial Week 3
+                            </a></li>
+                            <li><a id="w3-2" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
+                                Understanding more about <code>&lt;blockquote&gt;</code>
+                            </a></li>
+                            <li><a id="w3-3" href="http://html5doctor.com/blockquote-q-cite/">
+                                More <code>&lt;blockquote&gt;</code> reading
+                            </a></li>
+                        </ol>
+                    </aside>
+                </article>
 
-<pre><code>table, th, td {
-    border: 1px solid black;
-}</code></pre>
-
-                <p>With this new change I ran the validator and received no errors or warnings. I have now added multiple styles to the head of my document and cant wait to create the CSS file, link it and start styling my site next week!</p>
-
-                <p>Here is a view of my site concluding week 3:</p>
-                                    
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/week3-finish.png" alt="My Learning Journal Week 3 Screenshot" /> <!-- Source file of the image -->
-                    <figcaption>My Learning Journal Week 3 Screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
-
-                <!-- End of article content -->
-                <aside>
-                    <h2>References</h2>
+                <!-- Week 4 -->
+                <article id="week4">
+                    <header class="post">
+                        <h3>Week 4: Cascading Style Sheets</h3>
+                        <p>Published on <strong><time datetime="2020-10-28">October 28<sup>th</sup>, 2020</time></strong></p>
+                    </header>
+                    <!-- Main element of article -->
+                    <p>This week our objectives were to <sup><a href="#w4-1">1</a></sup>:</p>
                     <ol>
-                        <li><a id="w3-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial03/tutorial03.html">
-                            Tutorial Week 3
-                        </a></li>
-                        <li><a id="w3-2" href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
-                            Understanding more about <code>&lt;blockquote&gt;</code>
-                        </a></li>
-                        <li><a id="w3-3" href="http://html5doctor.com/blockquote-q-cite/">
-                            More <code>&lt;blockquote&gt;</code> reading
-                        </a></li>
+                        <li>Copy normalize.css and link to all the web pages</li>
+                        <li>Copy stylesheet.css and link to all the web pages</li>
+                        <li>Style the body element</li>
+                        <li>Style other elements such as:
+                            <ul>
+                                <li><code>&lt;h1&gt;, &lt;h2&gt;... &lt;h3&gt;</code></li>
+                                <li><code>&lt;p&gt;</code></li>
+                                <li>&lt;div id="wrapper"&gt;</li>
+                                <li>Anchor pseudo classes</li>
+                                <li>Style the main menu - &lt;nav id="menu"&gt;</li>
+                                <li>Style the article headings - &lt;header class="post"&gt;</li>
+                            </ul>
+                        </li>
+                        <li>Validate the HTML and CSS</li>
                     </ol>
-                </aside>
-            </article>
 
-            <!-- Week 4 -->
-            <article id="week4">
-                <header class="post">
-                    <h3>Week 4: Cascading Style Sheets</h3>
-                    <p>Published on <strong><time datetime="2020-10-28">October 28<sup>th</sup>, 2020</time></strong></p>
-                </header>
-                <!-- Main element of article -->
-                <p>This week our objectives were to <sup><a href="#w4-1">1</a></sup>:</p>
-                <ol>
-                    <li>Copy normalize.css and link to all the web pages</li>
-                    <li>Copy stylesheet.css and link to all the web pages</li>
-                    <li>Style the body element</li>
-                    <li>Style other elements such as:
-                        <ul>
-                            <li><code>&lt;h1&gt;, &lt;h2&gt;... &lt;h3&gt;</code></li>
-                            <li><code>&lt;p&gt;</code></li>
-                            <li>&lt;div id="wrapper"&gt;</li>
-                            <li>Anchor pseudo classes</li>
-                            <li>Style the main menu - &lt;nav id="menu"&gt;</li>
-                            <li>Style the article headings - &lt;header class="post"&gt;</li>
-                        </ul>
-                    </li>
-                    <li>Validate the HTML and CSS</li>
-                </ol>
+                    <!-- Week 4 Banner -->
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/code-html-css.png" alt="A picture of my css and html code" /> <!-- Source file of the image -->
+                        <figcaption>A photo snippet of my HTML and CSS code<br /> <!-- Illustration caption -->
+                        <small>Photo &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <!-- Week 4 Banner -->
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/code-html-css.png" alt="A picture of my css and html code" /> <!-- Source file of the image -->
-                    <figcaption>A photo snippet of my HTML and CSS code<br /> <!-- Illustration caption -->
-                    <small>Photo &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <h4>Adding <code>normalize.css</code> from GitHub</h4>
+                    <p>This week we are focusing on Cascading Style Sheets or <strong>CSS</strong> for short. It describes how HTML elements are to be displayed on different mediums such as screens, paper or even brail.</p>
+                    <p>The first stylesheet I am adding is the <code>normalize.css</code> stylesheet from Necolas on GitHub. This stylesheet has a very useful function. It ensures that all the basic elements are displayed in a consistent manor, or 'normalize', as the name would suggest.</p>
+                    <p>The external stylesheets are added in the <code>&lt;header&gt;</code> element at the top of the HTML document. This would look something like this:</p>
 
-                <h4>Adding <code>normalize.css</code> from GitHub</h4>
-                <p>This week we are focusing on Cascading Style Sheets or <strong>CSS</strong> for short. It describes how HTML elements are to be displayed on different mediums such as screens, paper or even brail.</p>
-                <p>The first stylesheet I am adding is the <code>normalize.css</code> stylesheet from Necolas on GitHub. This stylesheet has a very useful function. It ensures that all the basic elements are displayed in a consistent manor, or 'normalize', as the name would suggest.</p>
-                <p>The external stylesheets are added in the <code>&lt;header&gt;</code> element at the top of the HTML document. This would look something like this:</p>
+                    <pre><code>&lt;link href="css/normalize.css" rel="stylesheet" /&gt;</code></pre>
 
-                <pre><code>&lt;link href="css/normalize.css" rel="stylesheet" /&gt;</code></pre>
+                    <h4>Adding our own stylesheet</h4>
+                    <p>Now the page is normalized, I can add my own new stylesheet for my own layout and colour schemes. For this I created another new file called <em>stylesheet.css</em> in the <em>css</em> folder. Here I used the template provided by the tutorial which contained some empty blocks where styling can be added.</p>
 
-                <h4>Adding our own stylesheet</h4>
-                <p>Now the page is normalized, I can add my own new stylesheet for my own layout and colour schemes. For this I created another new file called <em>stylesheet.css</em> in the <em>css</em> folder. Here I used the template provided by the tutorial which contained some empty blocks where styling can be added.</p>
+                    <h4>Style the body element</h4>
+                    <p>The body element is the first viewable element of the page and represents the whole viewable content. By setting a background colour using <code>background-color: gray;</code> we can set the background colour to a nice grey.</p>
 
-                <h4>Style the body element</h4>
-                <p>The body element is the first viewable element of the page and represents the whole viewable content. By setting a background colour using <code>background-color: gray;</code> we can set the background colour to a nice grey.</p>
+                    <h4>Style other elements</h4>
+                    <h5>The headings <code>h1 - h6</code></h5>
+                    <p>These header elements are used in a similar way to to a report. The first heading, heading 1, represents the top level with all following in a natural hierarchy. For this purpose we can resize all of these elements in descending order.</p>
 
-                <h4>Style other elements</h4>
-                <h5>The headings <code>h1 - h6</code></h5>
-                <p>These header elements are used in a similar way to to a report. The first heading, heading 1, represents the top level with all following in a natural hierarchy. For this purpose we can resize all of these elements in descending order.</p>
+                    <h5>The paragraph <code>&lt;p&gt;</code> tag</h5>
+                    <p>The paragraph tag is initially influenced or <em>inherited</em> by the css rules set in the <code>body</code>. I decided to add the <em>Montserrat</em> font from Google as the primary font for all content on my web page. I initially set it for the <code>p</code> tags however founding it more fitting to simply add it in the <code>body</code> style since it will affect list items and other non <em>p</em> elements too.</p>
 
-                <h5>The paragraph <code>&lt;p&gt;</code> tag</h5>
-                <p>The paragraph tag is initially influenced or <em>inherited</em> by the css rules set in the <code>body</code>. I decided to add the <em>Montserrat</em> font from Google as the primary font for all content on my web page. I initially set it for the <code>p</code> tags however founding it more fitting to simply add it in the <code>body</code> style since it will affect list items and other non <em>p</em> elements too.</p>
+                    <h5>The wrapper &lt;div id="wrapper"&gt;</h5>
+                    <p>The wrapper element we are using to encompass all elements on the page, we can assign style to that container. As a start, having all the content in a max size box would make reading far easier and having that content centered would be more visually pleasing composition wise. To do this, I set the <code>max-width</code> value to 1000px and set the <code>margin</code> to auto. This way the wrapper will shrink down but only expand up to 1000px. And when there is a gap, add a margin to both sides equally.</p>
 
-                <h5>The wrapper &lt;div id="wrapper"&gt;</h5>
-                <p>The wrapper element we are using to encompass all elements on the page, we can assign style to that container. As a start, having all the content in a max size box would make reading far easier and having that content centered would be more visually pleasing composition wise. To do this, I set the <code>max-width</code> value to 1000px and set the <code>margin</code> to auto. This way the wrapper will shrink down but only expand up to 1000px. And when there is a gap, add a margin to both sides equally.</p>
+                    <p>I will later be removing this wrapper as this can easily be done using the <code>body</code> element and use css grid to organize content within. I will want some banner images to span the full screen width in the future too. By creating a max width and margin now, I will have trouble spanning an image across.</p>
 
-                <p>I will later be removing this wrapper as this can easily be done using the <code>body</code> element and use css grid to organize content within. I will want some banner images to span the full screen width in the future too. By creating a max width and margin now, I will have trouble spanning an image across.</p>
+                    <h5>The anchor &lt;a&gt; tag pseudo-classes</h5>
+                    <p>The anchor elements have different states depending on what actions have been taken on the page. For example, when the anchor tag has a link, it goes from being the regular font colour to having a <em>link colour</em>.</p>
 
-                <h5>The anchor &lt;a&gt; tag pseudo-classes</h5>
-                <p>The anchor elements have different states depending on what actions have been taken on the page. For example, when the anchor tag has a link, it goes from being the regular font colour to having a <em>link colour</em>.</p>
+                    <p>On top of that, if you hover over the link, the style changes again to use yet another colour and add an underline to the text.</p>
 
-                <p>On top of that, if you hover over the link, the style changes again to use yet another colour and add an underline to the text.</p>
+                    <p>We can affect these states by referencing the <code>&lt;a&gt;</code> tag's pseudo-elements. These are represented as <code>a</code> with a colon and the pseudo-element name. For example, the one for <em>hover</em> would look like this:</p>
 
-                <p>We can affect these states by referencing the <code>&lt;a&gt;</code> tag's pseudo-elements. These are represented as <code>a</code> with a colon and the pseudo-element name. For example, the one for <em>hover</em> would look like this:</p>
+    <pre><code>a:hover {
+        color: red;    
+    }</code></pre>
 
-<pre><code>a:hover {
-    color: red;    
-}</code></pre>
+                    <p>In this example, we have every anchor element which is hovered, change its colour to red.</p>
 
-                <p>In this example, we have every anchor element which is hovered, change its colour to red.</p>
+                    <p>There is an order to these pseudo-elements and must be updated in a certain order. This being: <code>a</code>, <code>a:link</code>, <code>a:visited</code>, <code>a:hover</code></p>
 
-                <p>There is an order to these pseudo-elements and must be updated in a certain order. This being: <code>a</code>, <code>a:link</code>, <code>a:visited</code>, <code>a:hover</code></p>
+                    <p>We can also influence only certain tags within other elements to make, for instance, only links within the articles red instead of blue which is applied everywhere else. To do this, I added the following:</p>
 
-                <p>We can also influence only certain tags within other elements to make, for instance, only links within the articles red instead of blue which is applied everywhere else. To do this, I added the following:</p>
+    <pre><code>article a:link {
+        color: red;
+    }</code></pre>
 
-<pre><code>article a:link {
-    color: red;
-}</code></pre>
+                    <p>By adding the parent element and then the element we want to affect, we can specify exactly where we want these css rules to apply.</p>
 
-                <p>By adding the parent element and then the element we want to affect, we can specify exactly where we want these css rules to apply.</p>
+                    <h5>The main menu &lt;nav&gt;</h5>
+                    <p>Navigation menus are usually implemented using list items as they contain natural hierarchy with nesting. The issue is that the elements aren't placed side-by-side left to right and they have bullet points next to each element.</p>
 
-                <h5>The main menu &lt;nav&gt;</h5>
-                <p>Navigation menus are usually implemented using list items as they contain natural hierarchy with nesting. The issue is that the elements aren't placed side-by-side left to right and they have bullet points next to each element.</p>
+                    <p>We can remove these by setting the <code>list-style-type</code> to none and make the <code>nav</code>'s anchor elements have a different link style.</p>
 
-                <p>We can remove these by setting the <code>list-style-type</code> to none and make the <code>nav</code>'s anchor elements have a different link style.</p>
+                    <h5>The article headers &lt;header class="post"&gt;</h5>
+                    <p>I could apply styles directly to the <code>header</code> however this would affect both the article header and the page header at the same time. Instead I applied the styling to the <code>post</code> class which I can specify on all the article headers.</p>
 
-                <h5>The article headers &lt;header class="post"&gt;</h5>
-                <p>I could apply styles directly to the <code>header</code> however this would affect both the article header and the page header at the same time. Instead I applied the styling to the <code>post</code> class which I can specify on all the article headers.</p>
+                    <p>A more efficient method for doing this would be to simply state 'only apply to headers which are children of the article element' like this:</p>
 
-                <p>A more efficient method for doing this would be to simply state 'only apply to headers which are children of the article element' like this:</p>
+    <pre><code>article header {
+        background-color: grey;
+    }</code></pre>
 
-<pre><code>article header {
-    background-color: grey;
-}</code></pre>
+                    <p>This would prevent the requirement of each header needing the class set and adding another article would be trivial.</p>
 
-                <p>This would prevent the requirement of each header needing the class set and adding another article would be trivial.</p>
+                    <p>As always, the last part of testing is to check the HTML and CSS is HTML5 compliant. Neither of these documents resulted in any errors and is ready to be uploaded!</p>
 
-                <p>As always, the last part of testing is to check the HTML and CSS is HTML5 compliant. Neither of these documents resulted in any errors and is ready to be uploaded!</p>
+                    <p>Here is a view of my site concluding week 4:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week4-finish.png" alt="My Learning Journal Week 4 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 4 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <p>Here is a view of my site concluding week 4:</p>
-                                    
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/week4-finish.png" alt="My Learning Journal Week 4 Screenshot" /> <!-- Source file of the image -->
-                    <figcaption>My Learning Journal Week 4 Screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <!-- End of article content -->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a id="w4-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial04.html">
+                                Tutorial Week 4
+                            </a></li>
+                            <li><a id="w4-2" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">CSS Root pseudo-class and Global CSS Variables
+                            </a></li>
+                            <li><a id="w4-3" href="https://coolors.co/1382cc-1f5880-2a2d34-323234-d4d2d5-fcfcfc-e1e5f2">My Chosen Colour Scheme
+                            </a></li>
+                            <li><a id="w4-x" href="https://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/">
+                                Using the <code>&lt;body&gt;</code> as a wrapper
+                            </a></li>
+                        </ol>
+                    </aside>
+                </article>
 
-                <!-- End of article content -->
-                <aside>
-                    <h2>References</h2>
+                <!--  Week 5 -->
+                <article id="week5">
+                    <header class="post">
+                        <h3>Week 5: Tutorial.html and Viewport</h3>
+                        <p>Published on <strong><time datetime="2020-11-04">November 4<sup>th</sup>, 2020</time></strong></p>
+                    </header>
+                    <!-- Main element of article -->
+                    <p>This week our objectives were to <sup><a href="#w5-1">1</a></sup>:</p>
                     <ol>
-                        <li><a id="w4-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial04.html">
-                            Tutorial Week 4
-                        </a></li>
-                        <li><a id="w4-2" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root">CSS Root pseudo-class and Global CSS Variables
-                        </a></li>
-                        <li><a id="w4-3" href="https://coolors.co/1382cc-1f5880-2a2d34-323234-d4d2d5-fcfcfc-e1e5f2">My Chosen Colour Scheme
-                        </a></li>
-                        <li><a id="w4-x" href="https://csswizardry.com/2011/01/using-the-body-element-as-a-wrapper/">
-                            Using the <code>&lt;body&gt;</code> as a wrapper
-                        </a></li>
+                        <li>Make a start on the tutorial.html document</li>
+                        <li>Update all previous weeks with what we've learned so far</li>
+                        <li>Add the viewport meta tag in the head of the pages</li>
+                        <li>Use CSS to style fonts, line heights and float content</li>
+                        <li>Validate the HTML and CSS</li>
                     </ol>
-                </aside>
-            </article>
 
-            <!--  Week 5 -->
-            <article id="week5">
-                <header class="post">
-                    <h3>Week 5: Tutorial.html and Viewport</h3>
-                    <p>Published on <strong><time datetime="2020-11-04">November 4<sup>th</sup>, 2020</time></strong></p>
-                </header>
-                <!-- Main element of article -->
-                <p>This week our objectives were to <sup><a href="#w5-1">1</a></sup>:</p>
-                <ol>
-                    <li>Make a start on the tutorial.html document</li>
-                    <li>Update all previous weeks with what we've learned so far</li>
-                    <li>Add the viewport meta tag in the head of the pages</li>
-                    <li>Use CSS to style fonts, line heights and float content</li>
-                    <li>Validate the HTML and CSS</li>
-                </ol>
+                    <!-- Week 4 Banner -->
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/google-fonts-something-old-quote.png" alt="A screenshot of google fonts with the quote 'Show me something old in a new way'" /> <!-- Source file of the image -->
+                        <figcaption>A screenshot of google fonts with a personal quote <br /> <!-- Illustration caption -->
+                        <small>Photo &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <!-- Week 4 Banner -->
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/google-fonts-something-old-quote.png" alt="A screenshot of google fonts with the quote 'Show me something old in a new way'" /> <!-- Source file of the image -->
-                    <figcaption>A screenshot of google fonts with a personal quote <br /> <!-- Illustration caption -->
-                    <small>Photo &copy; Jazer Barclay 2020</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <h4>Starting the tutorial page</h4>
+                    <p>Since this page is at the same stage as the first week, I updated all the layout and meta tags to match the main index document.</p>
 
-                <h4>Starting the tutorial page</h4>
-                <p>Since this page is at the same stage as the first week, I updated all the layout and meta tags to match the main index document.</p>
+                    <p>Next I added an introduction and pomodoro section to this guide explaining with case studies how better study time management can improve results and have personally applied this technique to my own studies which has helped me focus for extended periods of time.</p>
 
-                <p>Next I added an introduction and pomodoro section to this guide explaining with case studies how better study time management can improve results and have personally applied this technique to my own studies which has helped me focus for extended periods of time.</p>
+                    <h4>Weekly Learning</h4>
+                    <p>As for previous weeks' learning, I have been keeping this up to date as I go along to ensure I cover all of what I've done and while it's fresh in my memory.</p>
 
-                <h4>Weekly Learning</h4>
-                <p>As for previous weeks' learning, I have been keeping this up to date as I go along to ensure I cover all of what I've done and while it's fresh in my memory.</p>
+                    <h4>Viewport Meta Tag</h4>
+                    <p>The viewport meta tag in the head of the document is used to help control the width and scaling of the viewport so that the content is sized correctly on all devices.</p>
 
-                <h4>Viewport Meta Tag</h4>
-                <p>The viewport meta tag in the head of the document is used to help control the width and scaling of the viewport so that the content is sized correctly on all devices.</p>
+                    <h4>External Fonts</h4>
+                    <p>I have already started using google fonts from last week and have now added 2 more fonts; one for the main <code>h1</code> headings and the other for code blocks to use a monospace font.</p>
 
-                <h4>External Fonts</h4>
-                <p>I have already started using google fonts from last week and have now added 2 more fonts; one for the main <code>h1</code> headings and the other for code blocks to use a monospace font.</p>
+                    <h4>Floating Images</h4>
+                    <p>Block elements are usually placed one below the other. In some cases we may want content to wrap or be beside other content such as text around an image. For this we need to use the <code>float</code> style on an element.</p>
 
-                <h4>Floating Images</h4>
-                <p>Block elements are usually placed one below the other. In some cases we may want content to wrap or be beside other content such as text around an image. For this we need to use the <code>float</code> style on an element.</p>
+                    <p>Below I'll show an example of this floating action and the code that goes with it:</p>
 
-                <p>Below I'll show an example of this floating action and the code that goes with it:</p>
+                    <div id="float-example">
+                        <img src="images/jb_thumbnail.png" alt="JB Thumbnail Image" />
+                        <p>Here we can see the text wrapping around the thumbnail image!</p>
+                    </div>
 
-                <div id="float-example">
-                    <img src="images/jb_thumbnail.png" alt="JB Thumbnail Image" />
-                    <p>Here we can see the text wrapping around the thumbnail image!</p>
-                </div>
+                    <p>Here we set the image within the float-example div to be <code>float: left;</code> which will allow content to flow around the image with the image on the left.</p>
 
-                <p>Here we set the image within the float-example div to be <code>float: left;</code> which will allow content to flow around the image with the image on the left.</p>
+                    <h4>Line Height, Text Indenting and Alignment</h4>
+                    <p>These are very useful styles which we have control over. Line height affects the distance between lines of the same paragraph and can improve readability for those who are hard of seeing or suffer like I do from learning disabilities such as dyslexia.</p>
 
-                <h4>Line Height, Text Indenting and Alignment</h4>
-                <p>These are very useful styles which we have control over. Line height affects the distance between lines of the same paragraph and can improve readability for those who are hard of seeing or suffer like I do from learning disabilities such as dyslexia.</p>
+                    <p>Text indentation alters the indent at the beginning of a paragraph and can shift the text along without the need to add random spaces to the start of the text (which would be very bad practice).</p>
 
-                <p>Text indentation alters the indent at the beginning of a paragraph and can shift the text along without the need to add random spaces to the start of the text (which would be very bad practice).</p>
+                    <p>Text Alignment allows the control of how the text is formatted to the page. By default the text is left aligned however we can change this to be right aligned, centered or even justified.</p>
 
-                <p>Text Alignment allows the control of how the text is formatted to the page. By default the text is left aligned however we can change this to be right aligned, centered or even justified.</p>
+                    <h4>Validation</h4>
+                    <p>I made these changes and also validated my HTML + CSS for now both index and tutorial pages with no errors reported.</p>
 
-                <h4>Validation</h4>
-                <p>I made these changes and also validated my HTML + CSS for now both index and tutorial pages with no errors reported.</p>
+                    <p>Here is a view of my site concluding week 5:</p>
+                                        
+                    <figure> <!-- Image that illustrates the web page content -->
+                        <img src="images/week5-finish.png" alt="My Learning Journal Week 5 Screenshot" /> <!-- Source file of the image -->
+                        <figcaption>My Learning Journal Week 5 Screenshot<br /> <!-- Illustration caption -->
+                        <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
+                        </figcaption> <!-- End Caption-->
+                    </figure> <!-- End figure markup -->
 
-                <p>Here is a view of my site concluding week 5:</p>
-                                    
-                <figure> <!-- Image that illustrates the web page content -->
-                    <img src="images/week5-finish.png" alt="My Learning Journal Week 5 Screenshot" /> <!-- Source file of the image -->
-                    <figcaption>My Learning Journal Week 5 Screenshot<br /> <!-- Illustration caption -->
-                    <small>Screenshot &copy; Jazer Barclay</small> <!-- Copyright Image -->
-                    </figcaption> <!-- End Caption-->
-                </figure> <!-- End figure markup -->
+                    <!-- End of article content -->
+                    <aside>
+                        <h2>References</h2>
+                        <ol>
+                            <li><a id="w5-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial05/tutorial05.html">
+                                Tutorial Week 5
+                            </a></li>
+                            <li><a id="w5-2" href="https://fonts.google.com/?selection.family=Montserrat">
+                                Google Fonts Used
+                            </a></li>
+                        </ol>
+                    </aside>
+                </article>
 
-                <!-- End of article content -->
-                <aside>
-                    <h2>References</h2>
-                    <ol>
-                        <li><a id="w5-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial05/tutorial05.html">
-                            Tutorial Week 5
-                        </a></li>
-                        <li><a id="w5-2" href="https://fonts.google.com/?selection.family=Montserrat">
-                            Google Fonts Used
-                        </a></li>
-                    </ol>
-                </aside>
-            </article>
-
+            </section>
 
         </main><!--Close main page content --> 
  
         <footer> <!-- Footer content -->
-            <a href="mailto:jb2139@uni.brighton.ac.uk">Email Jazer Barclay</a>
+            <a href="mailto:jb2139@uni.brighton.ac.uk">Email Jazer Barclay</a><br />
             <small>&copy; 2020, Jazer Barclay</small>
         </footer>
 

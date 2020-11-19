@@ -46,18 +46,31 @@ body {
     letter-spacing: .05rem;
 }
 
+/* Core elements */
 header {
     text-align: center;
     background-color: var(--header-footer-color);
 
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
 }
 
-
 main {
     background-color: var(--page-color);
+}
+
+aside { }
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Articles */
+#articles {
+
 }
 
 article {
@@ -69,12 +82,12 @@ article header {
     background-color: transparent;
 }
 
-aside { }
-
-footer { }
+#contents {
+    padding: 100px 10px;
+}
 
 .container {
-    max-width: 1920px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -373,6 +386,11 @@ table {
 
 table, th, td {
     border: 1px solid var(--border-color);
+}
+
+table {
+    font-size: 16px;
+    text-align: center;
 }
 
 
