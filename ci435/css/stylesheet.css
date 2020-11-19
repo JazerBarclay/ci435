@@ -70,12 +70,10 @@ footer {
 
 /* Articles */
 #articles {
-
-}
-
-article {
     padding: 1.11rem;
 }
+
+article {  }
 
 article header {
     text-align: left;
@@ -351,6 +349,11 @@ img	{
     height: auto;
 }
 
+.image-logo {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
 
 /* Anchors */
 a { }
@@ -377,9 +380,9 @@ a:active {
 }
 
 /* Table Formatting */
-table {
+.table-container {
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     overflow-x: scroll;
     overflow-y: visible;
 }
@@ -528,4 +531,32 @@ article header p {
 #go-to-top:hover svg {
     fill: var(--primary-color);
     transition: var(--hover-transition);
+}
+
+/* Screens smaller than 360px wide */
+@media only screen and (max-width: 360px) {
+    #contents, figure {
+        height: 0; padding:0; margin:0;
+        display: none;
+    }
+}
+
+/* Screens 640px and smaller */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+    .container {
+        padding:0;
+    }
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.6em; }
+    #hero img {
+        width: 150px;
+        height: auto;
+    }
+    .card img {
+        display: none;
+    }
 }
