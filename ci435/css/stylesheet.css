@@ -560,3 +560,27 @@ article header p {
         display: none;
     }
 }
+
+/* Screens Larger than 768px */
+@media only screen and (min-width: 768px) {
+    nav li {
+        float: left;
+    }
+    nav li a {
+        padding: 10px 30px;
+    }
+    nav, nav a, nav a:link, nav a:visited {
+        color: var(--heading-color);
+    }
+    nav ul li a:hover {
+        color: var(--primary-color);
+    }
+    nav .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    nav .menu-icon {
+        display: none;
+    }
+}
