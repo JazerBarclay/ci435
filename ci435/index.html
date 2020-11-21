@@ -15,7 +15,7 @@
 
         <!-- Header with logo + navigation -->
         <header>
-            <nav role="navigation">
+            <nav>
                 <a id="logo" href="#">Learning Journal</a>
 
                 <!-- Checkbox and 'Span Hamburger' Icon -->
@@ -34,7 +34,7 @@
         
             <section id="hero">
                 <div id="hero-container" class="container content">
-                    <img src="images/jb_thumbnail.png" />
+                    <img src="images/jb_thumbnail.png" alt="JB Thumbnail Image" />
                     <h1>Learning Journal</h1>
                     <p>CI435 - Introduction to Web Development <br />
                     A site by Author</p>
@@ -42,6 +42,8 @@
             </section>
 
             <section id="contents" class="content">
+                <div id="contents-header" class="container"><h2>Contents</h2></div>
+
                 <div id="contents-container" class="card-container">
                     <a href="#week1" class="card">
                             <p>Week 1</p>
@@ -262,9 +264,9 @@
 
                     <p>I also did some research into the <code>pre</code> tag<sup><a href="#w2-3">3</a></sup> as in future posts, I would very much like to add full blocks of code rather than inline. The <code>pre</code> tag enclosing the <code>code</code> tag like so</p>
 
-    <pre><code>&lt;pre&gt;&lt;code&gt;
-        System.out.println();
-    &lt;/code&gt;&lt;/pre&gt;</code></pre>
+<pre><code>&lt;pre&gt;&lt;code&gt;
+    System.out.println();
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
 
                     <p>This way with some future formatting, I could still use the <code>code</code> semantics with a wrapper to ensure it was on its own line with the pre-formatted code maintained!</p>
 
@@ -499,9 +501,9 @@
 
                     <p>Since HTML5 moves all styling out of HTML and into CSS, I had to create table lines using my temporary css block at the top of the page. This allowed me to bring back the same styling using the following code</p>
 
-    <pre><code>table, th, td {
-        border: 1px solid black;
-    }</code></pre>
+<pre><code>table, th, td {
+    border: 1px solid black;
+}</code></pre>
 
                     <p>With this new change I ran the validator and received no errors or warnings. I have now added multiple styles to the head of my document and cant wait to create the CSS file, link it and start styling my site next week!</p>
 
@@ -600,9 +602,9 @@
 
                     <p>We can affect these states by referencing the <code>&lt;a&gt;</code> tag's pseudo-elements. These are represented as <code>a</code> with a colon and the pseudo-element name. For example, the one for <em>hover</em> would look like this:</p>
 
-    <pre><code>a:hover {
-        color: red;    
-    }</code></pre>
+<pre><code>a:hover {
+    color: red;    
+}</code></pre>
 
                     <p>In this example, we have every anchor element which is hovered, change its colour to red.</p>
 
@@ -610,9 +612,9 @@
 
                     <p>We can also influence only certain tags within other elements to make, for instance, only links within the articles red instead of blue which is applied everywhere else. To do this, I added the following:</p>
 
-    <pre><code>article a:link {
-        color: red;
-    }</code></pre>
+<pre><code>article a:link {
+    color: red;
+}</code></pre>
 
                     <p>By adding the parent element and then the element we want to affect, we can specify exactly where we want these css rules to apply.</p>
 
@@ -626,9 +628,9 @@
 
                     <p>A more efficient method for doing this would be to simply state 'only apply to headers which are children of the article element' like this:</p>
 
-    <pre><code>article header {
-        background-color: grey;
-    }</code></pre>
+<pre><code>article header {
+    background-color: grey;
+}</code></pre>
 
                     <p>This would prevent the requirement of each header needing the class set and adding another article would be trivial.</p>
 
@@ -831,7 +833,7 @@
                         <p>Published on <strong><time datetime="2020-11-18">November 18<sup>th</sup>, 2020</time></strong></p>
                     </header>
                     <!-- Main element of article -->
-                    <p>This week our objectives were to <sup><a href="#w6-1">1</a></sup>:</p>
+                    <p>This week our objectives were to <sup><a href="#7-1">1</a></sup>:</p>
                     <ol>
                         <li>Adjust our HTML and CSS</li>
                         <li>Setup a responsive layout</li>
@@ -855,7 +857,7 @@
                     <h4>Validation</h4>
                     <p>I made these changes and also validated my HTML + CSS for now both index and tutorial pages with no errors reported.</p>
 
-                    <p>Here is a view of my site concluding week 6:</p>
+                    <p>Here is a view of my site concluding week 7:</p>
                                         
                     <figure> <!-- Image that illustrates the web page content -->
                         <img src="images/week7-finish.png" alt="My Learning Journal Week 7 Screenshot" /> <!-- Source file of the image -->

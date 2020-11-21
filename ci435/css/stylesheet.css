@@ -459,6 +459,11 @@ article header p {
 
 /* Contents Card Layout */
 
+#contents-header {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
 .card-container {
     max-width: 1200px;
     margin: auto;
