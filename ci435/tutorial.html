@@ -15,17 +15,21 @@
 <body>
 	<!--Markup all web page content inside the 'body' tags -->
 
-	<header><!--The main heading for the page -->
-		<h1>Study Tips for Lockdown</h1>
-	</header>
+	<header>
+		<nav>
+			<a id="logo" href="#">Learning Journal</a>
 
-	<nav><!--The primary navigation for the page -->
-		<ul>
-			<li><a href="index.html">Learning Journal</a></li>
-			<li><a href="#">Tutorial</a></li>
-			<li><a href="contact.html">Contact me</a></li>
-		</ul>
-	</nav>
+			<!-- Checkbox and 'Span Hamburger' Icon -->
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<!-- Unordered List for Menu Items -->
+			<ul class="menu">
+				<li><a href="index.html">Learning Journal</a></li>
+				<li><a href="#">Tutorial</a></li>
+				<li><a href="tutorial.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
 	<main><!--The main page content -->
 

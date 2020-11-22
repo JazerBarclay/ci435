@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+/* ----- Import Google Fonts ----- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Source+Code+Pro:wght@300;400&display=swap');
 
-/* Root Colour Scheme */
+
+/* =========================== */
+/* ----- Root Variables ------ */
+/* =========================== */
+
 :root {
     --header-footer-color: #222222;
     --page-color: #2a2a2a;
@@ -23,7 +28,10 @@
     --hover-transition: .2s;
 }
 
-/* Applied Smoothing and Scroll Behaviour to All Elements */
+/* ================================ */
+/* ----- Core Element Styles ------ */
+/* ================================ */
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -34,7 +42,6 @@
     scroll-behavior: smooth;
 }
 
-/* Main Element Styles */
 html {
     background-color: var(--header-footer-color);
     font-size: 18px;
@@ -46,58 +53,184 @@ body {
     letter-spacing: .05rem;
 }
 
-/* Core elements */
-header {
-    text-align: center;
+p {
+    line-height: 1.5;
+    letter-spacing: .05rem;
+    margin: .75rem 0 .75rem 0;
+}
+
+
+/* ==================== */
+/* ----- Headings ----- */
+/* ==================== */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--heading-color);
+    letter-spacing: .2rem;
+    margin: .3rem 0 .6rem 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: .5rem 0 .5rem 0;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: 1.3rem 0 .4rem 0;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: 1.3rem 0 .4rem 0;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--heading-color);
+    letter-spacing: .1rem;
+    margin: 1.3rem 0 .4rem 0;
+}
+
+
+/* =========================== */
+/* ----- Links / Anchors ----- */
+/* =========================== */
+
+/* Link Clickable, Visited and Active */
+a:link, a:visited, a:active	{
+    color: var(--primary-color);
+}
+
+/* On Hover Action */
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* On Hold Action */
+a:active {
+    color: var(--font-color);
+}
+
+/* Inline Text Modifiers */
+strong {
+    font-weight: 600;
+    color: var(--border-color);
+}
+
+em { 
+    color: var(--heading-color);
+}
+
+/* Lists */
+li, dt, dd {
+    margin-top: .5rem; margin-bottom: .5rem;
+    line-height: 1.3rem;
+}
+
+
+/* ----- Pre-Formatted Code ----- */
+
+pre {
+    border: 1px solid rgba(212,210,213, .2);
+    border-radius: 4px;
+    padding: .7rem 0px .7rem 2rem;
     background-color: var(--header-footer-color);
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    color: var(--alternate-color);
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
 }
 
-main {
-    background-color: var(--page-color);
+code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--header-footer-color);
+    padding: .07rem .1rem .07rem .1rem;
+    border-radius: 4px;
 }
 
-aside { }
-
-footer {
-    text-align: center;
-    padding: 20px;
+pre code {
+    padding: 0;
+    border-radius: 0;
+    line-height: 1.2rem;
 }
 
 
-/* Articles */
-#articles {
-    padding: 1.11rem;
-}
+/* ----- Figures and Images ----- */
 
-article {  }
+figure { margin: 0; }
 
-article header {
-    text-align: left;
-    background-color: transparent;
-}
-
-#contents {
-    padding: 100px 10px;
-}
-
-.container {
+figure img	{
     max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ----- Table Formatting ----- */
+
+.table-container {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
+table, th, td {
+    border: 1px solid var(--border-color);
+}
+
+table {
+    font-size: 16px;
+    text-align: center;
     margin: auto;
 }
 
-.content {
+
+/* ============================== */
+/* ----- Top Header Section ----- */
+/* ============================== */
+
+#logo {
+    position: relative;
+    float: left;
+    font-size: 20px;
     padding: 20px;
+    margin-left: 0;
+    margin-right: auto;
+    text-decoration: none;
+    color: var(--heading-color);
 }
 
-.post {
-    margin: 0;
-}
 
-/* Navigation section */
+/* ============================== */
+/* ----- Navigation section ----- */
+/* ============================== */
 
 nav {
     /* Fancy Drop Shadow :O */
@@ -224,193 +357,30 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
 
-/* End of Navigation section */
 
-/* Headings */
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 3rem;
-    color: var(--heading-color);
-    letter-spacing: .2rem;
-    margin: .3rem 0 .6rem 0;
-}
+/* ============================== */
+/* ----- Main Layout Design ----- */
+/* ============================== */
 
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 2.2rem;
-    color: var(--heading-color);
-    letter-spacing: .1rem;
-    margin: .5rem 0 .5rem 0;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: var(--heading-color);
-    letter-spacing: .1rem;
-    margin: .5rem 0 .5rem 0;
-}
-
-h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: var(--heading-color);
-    letter-spacing: .1rem;
-    margin: 1.3rem 0 .4rem 0;
-}
-
-h5 {
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--heading-color);
-    letter-spacing: .1rem;
-    margin: 1.3rem 0 .4rem 0;
-}
-
-h6 { margin: 0; }
-
-
-/* Grouping */
-p {
-    line-height: 1.5;
-    letter-spacing: .05rem;
-    margin: .75rem 0 .75rem 0;
-}
-
-blockquote {  }
-
-pre {
-    border: 1px solid rgba(212,210,213, .2);
-    border-radius: 4px;
-    padding: .7rem 0px .7rem 2rem;
-    background-color: var(--header-footer-color);
-    color: var(--alternate-color);
-    overflow: scroll;
-    overflow-x: scroll;
-    overflow-y: visible;
-}
-
-pre code {
-    padding: 0;
-    border-radius: 0;
-    line-height: 1.2rem;
-}
-
-/* Lists */
-ul { }
-
-ol { }
-
-li {
-    margin-top: .5rem; margin-bottom: .5rem;
-    line-height: 1.3rem;
-}
-
-dl { }
-
-dt { }
-
-dd { }
-
-
-/* Text */
-em { color: var(--heading-color); }
-
-strong {
-    font-weight: 600;
-    color: var(--border-color);
-}
-
-small { }
-
-cite { }
-
-time { }
-
-code {
-    font-family: 'Source Code Pro', monospace;
-    background-color: var(--header-footer-color);
-    padding: .07rem .1rem .07rem .1rem;
-    border-radius: 4px;
-}
-
-/* Images */
-figure { margin: 0; }
-
-figcaption { }
-
-img	{
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-}
-
-.image-logo {
-    width: auto;
-    height: auto;
-    margin: auto;
-}
-
-/* Anchors */
-a { }
-
-a:link, a:visited, a:active	{
-    color: var(--primary-color);
-}
-
-/* Link Clickable Action */
-a:link	{ }
-
-/* Previously Clicked Action */
-a:visited { }
-
-/* On Hover Action */
-a:hover {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-/* On Hold Action */
-a:active {
-    color: var(--font-color);
-}
-
-/* Table Formatting */
-.table-container {
-    width: 100%;
-    overflow: hidden;
-    overflow-x: scroll;
-    overflow-y: visible;
-}
-
-table, th, td {
-    border: 1px solid var(--border-color);
-}
-
-table {
-    font-size: 16px;
+section h2 {
+    padding: 40px 0;
     text-align: center;
 }
 
 
-article header p { 
-    margin: 0;
-}
 
-#logo {
-    position: relative;
-    float: left;
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 0;
-    margin-right: auto;
-    text-decoration: none;
-    color: var(--heading-color);
-}
+
+
+
+
+
+
+
+
+
+/* ======================== */
+/* ----- HERO SECTION ----- */
+/* ======================== */
 
 #hero {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/huxley-building.jpeg') center center no-repeat;
@@ -419,6 +389,7 @@ article header p {
     -o-background-size: cover;
     background-size: cover;
     min-height: 80vh;
+    padding: 20px;
     display: grid;
     place-content: center;
     text-align: center;
@@ -447,26 +418,15 @@ article header p {
     100% { transform: scale(1); }
 }
 
-#float-example, #float-example img {
-    height: 80px
-}
 
-#float-example img {
-    width: 80px;
-    float: left;
-    padding-right: 20px;
-}
-
-/* Contents Card Layout */
-
-#contents-header {
-    padding-bottom: 40px;
-    text-align: center;
-}
+/* ================================ */
+/* ----- Contents Card Layout ----- */
+/* ================================ */
 
 .card-container {
     max-width: 1200px;
     margin: auto;
+    padding: 20px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -507,8 +467,147 @@ article header p {
 
 .card img {
     height: 200px;
+    width: 100%;
     object-fit: cover;
 }
+
+
+/* ================================ */
+/* ----- Weekly Banner Images ----- */
+/* ================================ */
+
+.article-banner {
+    height: 50vw;
+    max-height: 400px;
+}
+
+#week1 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week2 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/huxley-building.jpeg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week3 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/week3-table.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week4 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/code-html-css.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week5 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/google-fonts-something-old-quote.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week6 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/learning-journal-splash.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week7 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week8 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#week9 .article-banner {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.png') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* ===================================== */
+/* ----- Article Design and Layout ----- */
+/* ===================================== */
+
+/* Set all article elements 1200px max with auto margin */
+article > * {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+/* Remove the last set rule for the banner */
+article .article-banner{
+    max-width: none;
+    padding: 0;
+    margin: auto;
+}
+
+/* Set grid areas for article elements (Used in media queries) */
+article .article-banner {
+    grid-area: article-banner;
+}
+
+article header {
+    grid-area: article-header;
+}
+
+article .article-main {
+    grid-area: article-content;
+}
+
+article aside {
+    grid-area: article-references;
+}
+
+
+/* ====================================== */
+/* ----- Miscellaneous for Articles ----- */
+/* ====================================== */
+
+#float-example {
+    height: 80px;
+}
+
+#float-example img {
+    width: 80px;
+    float: left;
+    padding-right: 20px;
+}
+
+/* ====================================== */
+/* ----- Return to Top of Page Link ----- */
+/* ====================================== */
 
 #go-to-top {
     background-color: var(--header-footer-color);
@@ -537,6 +636,12 @@ article header p {
     fill: var(--primary-color);
     transition: var(--hover-transition);
 }
+
+
+
+/* ==================================== */
+/* ----- Responsive Media Queries ----- */
+/* ==================================== */
 
 /* Screens smaller than 360px wide */
 @media only screen and (max-width: 360px) {
@@ -568,6 +673,8 @@ article header p {
 
 /* Screens Larger than 768px */
 @media only screen and (min-width: 768px) {
+
+    /* Release nav from hamburger menu */
     nav li {
         float: left;
     }
@@ -588,4 +695,113 @@ article header p {
     nav .menu-icon {
         display: none;
     }
+
+    /* Horizontal layout hero section */
+    #hero {
+        width: 100vw;
+        padding: 0; 
+    }
+
+    #hero-container {
+        display: grid;
+        gap: 0px 40px;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "hero-img hero-header"
+                             "hero-img hero-subtitle";
+    }
+
+    #hero-container img {
+        grid-area: hero-img;
+        justify-self: end;
+    }
+
+    #hero-container h1 {
+        grid-area: hero-header;
+        text-align: left;
+        align-self: end;
+    }
+
+    #hero-container p {
+        grid-area: hero-subtitle;
+        text-align: left;
+        align-self: start;
+    }
+
+    /* Expand card layout max-width */
+    .card-container {
+        max-width: 1600px;
+    }
+
+}
+
+/* Screens Larger than 1024px */
+@media only screen and (min-width: 1200px) {
+    
+    /* Fancy Article Layout */
+    article {
+        position: relative;
+        overflow: visible;
+        display: grid;
+        grid-template-columns: 1fr minmax(100px, 960px) minmax(100px, 320px) minmax(100px, 960px) 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "article-banner article-banner article-banner article-header ."
+                             "article-banner article-banner article-banner article-content ."
+                             "article-banner article-banner article-banner article-references .";
+    }
+
+    article:nth-child(odd) {
+        grid-template-columns: 1fr 1fr minmax(100px, 960px) minmax(100px, 320px) minmax(100px, 960px) 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "article-banner article-banner article-header . . ."
+                             "article-banner article-banner article-content . . ."
+                             "article-banner article-banner article-references . . .";
+    }
+
+    article > * {
+        margin:0;
+        width: auto;
+    }
+
+    article .article-banner {
+        position: sticky;
+        position: -webkit-sticky;
+        margin:0;
+        top: 0px;
+        left: 0;
+        float: left;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+
+    article header {
+        position: sticky;
+        margin: 50px 0 0 0;
+        max-height: none;
+        max-width: 960px;
+        background-color: var(--page-color);
+        align-self: end;
+    }
+
+    .article-main {
+        position: relative;
+        margin: 0;
+        max-height: none;
+        max-width: 960px;
+        background-color: var(--page-color);
+        align-self: end;
+    }
+
+    article aside {
+        grid-area: article-references;
+        position: relative;
+        margin: 0 0 50px 0;
+        max-width: 960px;
+        align-self: start;
+        max-height: none;
+        background-color: var(--page-color);
+    }
+
 }
