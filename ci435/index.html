@@ -847,7 +847,7 @@
                         </figure> <!-- End figure markup -->
 
                         <h4>Optimizing Images</h4>
-                        <p>The main cause for such a poor performance score is due to the images and more to the point, their file sizes. There are many ways to reduce an image's file size. The route I took is to run them through a compressor service such as compressor.io. This website will accept images up to 10 megabytes in size and compress the images to shrink the file size. I have applied this to all of the images used on the site bar one which is the logo used in the hero section. I want this logo to be in the highest quality possible to be eye catching.</p>
+                        <p>The main cause for such a poor performance score is due to the images and more to the point, their file sizes. There are many ways to reduce an image's file size. The route I took is to run them through a compressor service such as compressor.io.<sup><a href="#7-3">3</a></sup> This website will accept images up to 10 megabytes in size and compress the images to shrink the file size. I have applied this to all of the images used on the site bar one which is the logo used in the hero section. I want this logo to be in the highest quality possible to be eye catching.</p>
 
                         <p>From simply reducing these file sizes using a compressor, the results speak for themselves:</p>
 
@@ -863,6 +863,8 @@
 
                         <p>For my site, I'm using a column design that alternates between left and right. This benefits me in that I never need a full screen sized image as these panels lock out at 960px each. I do have to be careful as the mobile-first design can also stretch to 1200px before the styles switch.</p>
 
+                        <p>To alter the scale / size of the images, I'm using an application called GIMP which stands for the Gnu Image Manipulator Program.<sup><a href="#7-4">4</a></sup> This is a free and open source image editor which has the functionality to rescale an image to any given size.</p>
+
                         <p>The final result of reducing all the images to this max displayable size has further affected the loading score!</p>
 
                         <figure> <!-- Image that illustrates the web page content -->
@@ -872,7 +874,7 @@
                             </figcaption> <!-- End Caption-->
                         </figure> <!-- End figure markup -->
 
-                        <p>On a final note, there is a last optimization to the css style for each of the banner images. Here I set the mobile first design to use a half-sized image when on mobile to save bandwidth and for desktops to use the full fat image as these will most likely be on wired internet rather than mobile data. Just a small nudge to help mobile users.</p>
+                        <p>On a final note, there is a last few optimizations to the images and css style for each of the banner images. Here I set the mobile first design to use a half-sized image when on mobile to save bandwidth and for desktops to use the full fat image as these will most likely be on wired internet rather than mobile data. Just a small nudge to help mobile users.</p>
 
                         <h4>Refactoring Code</h4>
                         <p>Making my banner image appear as a background required a new <code>div</code> element with the banner images set as a <code>background-image</code> so it would fall behind the content and not be clickable. I have also taken this chance to restructure and comment all my css stylesheet code into discrete sections that can easily be followed and rules found. I use a <code>:root</code> block for core colours that can be referenced throughout the sheet as primary colours, page colours, hover transitions times and so on. This way if I wish to change the primary colour, I only need to update the root value and the change will be referenced everywhere.</p>
@@ -898,6 +900,12 @@
                             </a></li>
                             <li><a id="w7-2" href="https://developers.google.com/web/tools/lighthouse" target="_blank">
                                 Google Progressive Web Applications Website
+                            </a></li>
+                            <li><a id="w7-3" href="https://compressor.io/" target="_blank">
+                                Image Compressor Website
+                            </a></li>
+                            <li><a id="w7-4" href="https://www.gimp.org/" target="_blank">
+                                Gnu Image Manipulator Program (GIMP)
                             </a></li>
                         </ol>
                     </aside>
