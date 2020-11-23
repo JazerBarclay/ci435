@@ -9,11 +9,12 @@
 /* =========================== */
 
 :root {
+    /* Page Colours */
     --header-footer-color: #222222;
     --page-color: #2a2a2a;
     --border-color: #d4d2d5;
 
-    /* General Palet */
+    /* General Pallet */
     --primary-color: #1382CC;
     --secondary-color: #1F5880;
     --alternate-color: #E1E5F2;
@@ -124,12 +125,14 @@ h6 {
 /* Link Clickable, Visited and Active */
 a:link, a:visited, a:active	{
     color: var(--primary-color);
+    transition: var(--hover-transition);
 }
 
 /* On Hover Action */
 a:hover {
     color: var(--secondary-color);
     text-decoration: none;
+    transition: var(--hover-transition);
 }
 
 /* On Hold Action */
