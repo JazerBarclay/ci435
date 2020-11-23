@@ -14,6 +14,35 @@
         <link href="css/stylesheet.css" rel="stylesheet /">
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="192x192" href="images/icon.png">
+
+        <!-- Site Meta -->
+        <meta name="description" content="Jazer's Learning Journal">
+        <meta name="theme-color" content="#1382cc">
+        <meta name="msapplication-TileColor" content="#1382cc">
+        <meta name="referrer" content="unsafe-url">
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Jazer's CI435 Coursework" />
+        <meta property="og:title" content="Jazer's Learning Journal" />
+        <meta property="og:description" content="CI435 - Introduction to Web Development" />
+        <meta property="og:image" content="https://jb2139.brighton.domains/ci435/images/jb_thumbnail.png" />
+        <meta property="og:url" content="https://jb2139.brighton.domains/ci435/" />
+        <meta property="og:locale" content="en_GB">
+
+        <!-- Twitter Meta -->
+        <meta name="twitter:title" content="Jazer's Learning Journal">
+        <meta name="twitter:description" content="CI435 - Introduction to Web Development">
+        <meta name="twitter:image" content="https://jb2139.brighton.domains/ci435/images/jb_thumbnail.png">
+        <meta name="twitter:site" content="@jazerbarclay">
+        <meta name="twitter:creator" content="@jazerbarclay">
+        <meta content="summary_large_image" name="twitter:card">
+
     </head>
 
     <!--Markup all web page content inside the 'body' tags -->
@@ -31,7 +60,7 @@
                 <ul class="menu">
                     <li><a href="#contents">Contents</a></li>
                     <li><a href="tutorial.html">Tutorial</a></li>
-                    <li><a href="tutorial.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,7 +69,7 @@
         <main>
 
             <!-- Hero Splash Screen -->
-            <section id="hero">
+            <section id="journal-hero" class="hero">
                 <div id="hero-container">
                     <img src="images/jb_thumbnail.png" alt="JB Thumbnail Image" />
                     <h1>Learning Journal</h1>
@@ -820,7 +849,7 @@
                     </header>
 
                     <div class="article-main">
-                        <p>This week our objectives were to <sup><a href="#7-1">1</a></sup>:</p>
+                        <p>This week our objectives were to <sup><a href="#w7-1">1</a></sup>:</p>
                         <ol>
                             <li>Make the media (images and video) on the page flexible</li>
                             <li>Optimise images for better loading times</li>
@@ -833,7 +862,7 @@
 
                         <p>I have also set the banner images to be background elements when moving to a desktop size screen. This has been achieved using <em>CSS Grid</em> with the scroll element set to <em>sticky</em> to lock it in place.</p>
 
-                        <p>Having all these images on the page is now affecting the loading speed of the page. I have been using an extension made by Google to rank the page on design for accessibility, speed and performance. This extension is called Lighthouse and was primarily developed to aide in the effort of creating mobile first websites along with Progressive Web Apps (PWA).<sup><a href="#7-2">2</a></sup> </p>
+                        <p>Having all these images on the page is now affecting the loading speed of the page. I have been using an extension made by Google to rank the page on design for accessibility, speed and performance. This extension is called Lighthouse and was primarily developed to aide in the effort of creating mobile first websites along with Progressive Web Apps (PWA).<sup><a href="#w7-2">2</a></sup> </p>
     
                         <p>A PWA website is able to be installed on a device and run locally without requiring internet. This is very powerful for developers to make a website that can double as an application that users can bookmark or even install to their mobile devices and use like a native application.</p>
 
@@ -847,7 +876,7 @@
                         </figure> <!-- End figure markup -->
 
                         <h4>Optimizing Images</h4>
-                        <p>The main cause for such a poor performance score is due to the images and more to the point, their file sizes. There are many ways to reduce an image's file size. The route I took is to run them through a compressor service such as compressor.io.<sup><a href="#7-3">3</a></sup> This website will accept images up to 10 megabytes in size and compress the images to shrink the file size. I have applied this to all of the images used on the site bar one which is the logo used in the hero section. I want this logo to be in the highest quality possible to be eye catching.</p>
+                        <p>The main cause for such a poor performance score is due to the images and more to the point, their file sizes. There are many ways to reduce an image's file size. The route I took is to run them through a compressor service such as compressor.io.<sup><a href="#w7-3">3</a></sup> This website will accept images up to 10 megabytes in size and compress the images to shrink the file size. I have applied this to all of the images used on the site bar one which is the logo used in the hero section. I want this logo to be in the highest quality possible to be eye catching.</p>
 
                         <p>From simply reducing these file sizes using a compressor, the results speak for themselves:</p>
 
@@ -863,7 +892,7 @@
 
                         <p>For my site, I'm using a column design that alternates between left and right. This benefits me in that I never need a full screen sized image as these panels lock out at 960px each. I do have to be careful as the mobile-first design can also stretch to 1200px before the styles switch.</p>
 
-                        <p>To alter the scale / size of the images, I'm using an application called GIMP which stands for the Gnu Image Manipulator Program.<sup><a href="#7-4">4</a></sup> This is a free and open source image editor which has the functionality to rescale an image to any given size.</p>
+                        <p>To alter the scale / size of the images, I'm using an application called GIMP which stands for the Gnu Image Manipulator Program.<sup><a href="#w7-4">4</a></sup> This is a free and open source image editor which has the functionality to rescale an image to any given size.</p>
 
                         <p>The final result of reducing all the images to this max displayable size has further affected the loading score!</p>
 

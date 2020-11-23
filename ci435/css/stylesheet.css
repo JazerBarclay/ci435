@@ -370,30 +370,45 @@ section h2 {
     text-align: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
     padding: 20px;
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
 /* ======================== */
 /* ----- HERO SECTION ----- */
 /* ======================== */
 
-#hero {
+#journal-hero {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/huxley-building.jpeg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#tutorial-hero {
+    /* Photo by Isabella Christina on Unsplash */
+    /* https://unsplash.com/@christina?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText */
+    /* https://unsplash.com/s/photos/timer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),  url('../images/pocket-watch-time.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero {
     min-height: 80vh;
     padding: 20px;
     display: grid;
@@ -401,18 +416,18 @@ footer {
     text-align: center;
 }
 
-#hero h1 {
+.hero h1 {
     text-transform: uppercase;
 }
 
-#hero img {
+.hero img {
     height: 200px;
     width: auto;
     border-radius: 20px;
     margin: 20px;
 }
 
-#hero img{ 
+.hero img{ 
     animation: pulse 1s infinite;
     animation-timing-function: ease;
 }
@@ -424,6 +439,11 @@ footer {
     100% { transform: scale(1); }
 }
 
+#time-management, #tutorial-references {
+    margin: auto;
+    padding: 20px;
+    max-width: 800px;
+}
 
 /* ================================ */
 /* ----- Contents Card Layout ----- */
