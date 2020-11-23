@@ -544,7 +544,7 @@ footer {
 }
 
 #week8 .article-banner {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.png') center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -552,7 +552,7 @@ footer {
 }
 
 #week9 .article-banner {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.png') center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

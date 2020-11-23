@@ -875,10 +875,10 @@
                         <p>On a final note, there is a last optimization to the css style for each of the banner images. Here I set the mobile first design to use a half-sized image when on mobile to save bandwidth and for desktops to use the full fat image as these will most likely be on wired internet rather than mobile data. Just a small nudge to help mobile users.</p>
 
                         <h4>Refactoring Code</h4>
-                        <p></p>
+                        <p>Making my banner image appear as a background required a new <code>div</code> element with the banner images set as a <code>background-image</code> so it would fall behind the content and not be clickable. I have also taken this chance to restructure and comment all my css stylesheet code into discrete sections that can easily be followed and rules found. I use a <code>:root</code> block for core colours that can be referenced throughout the sheet as primary colours, page colours, hover transitions times and so on. This way if I wish to change the primary colour, I only need to update the root value and the change will be referenced everywhere.</p>
     
                         <h4>Validation</h4>
-                        <p></p>
+                        <p>With the refactoring of code, I wanted to make sure there were no errors or validation errors introduced. Thankfully since all the code was simply moved and small changes updated, there were no errors in either the HTML or CSS code.</p>
     
                         <p>Here is a view of my site concluding week 7:</p>
                                             
