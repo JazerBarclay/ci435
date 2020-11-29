@@ -941,27 +941,71 @@
                 </article>
 
 
-                <!-- <article id="week8">
+                <article id="week8">
                     <div class="article-banner"></div>
                     
                     <header class="article-header">
-                        <h3>Week </h3>
-                        <p>Published on </p>
+                        <h3>Week 8: CSS3 Responsive Layouts </h3>
+                        <p>Published on <strong><time datetime="2020-11-25">November 25<sup>th</sup>, 2020</time></strong></p>
                     </header>
 
                     <div class="article-main">
+                        <p>This week our objectives were to <sup><a href="#w8-1">1</a></sup>:</p>
+                        <ol>
+                            <li>Flex box card layout</li>
+                            <li>Multi-column layout</li>
+                            <li>Run validation</li>
+                        </ol>
+
+                        <p>This week our focus was on creating a responsive layout that conforms with the CSS3 specification and works across a range of screen sizes and devices.</p>
+
+                        <p>I have already completed many of the requirements for a responsive layout considering very small screen sizes such as iPod Touch at 1136px by 640px all the way up to 3840px by 2160px 4k screens.</p>
+
+                        <h4>Flexbox Card Layout</h4>
+                        <p>I have created a contents section at the top of my learning journal page to help navigate to the desired article within the page. This is done using a flexbox layout that stretches and repeats based on the width availabe.</p>
+
+                        <p>This container also adjusts based on the media query rules applied so the best maximum width is applied.</p>
+
+                        <p>The cards themselves also use a flexbox design providing equal spacing for each element by setting the justify to <code>space-between</code>.</p>
+
+                        <h4>Multi-column Layout</h4>
+                        <p>The layout for the articles / posts in my journal are set using css grid to help align elements and based on if it's an even or odd week, adjusts the layout automatically on larger devices.</p>
+
+                        <p>I have also set the media query for larger screes to use the banner image to span the full width of the grid. This initially had an issue where on some browsers and certain operating systems, it would either take into consideration the scroll bar and not overflow or ignore it and create an x-axis scroll which I certainly didn't want.</p>
+
+                        <p>I fixed this by using the following css styling:</p>
+                        
+                        <pre><code>width: calc(100vw - ( 100vw - 100% ));</code></pre>
+
+                        <p>This fix takes the view width and subtracts the difference between it and the 100% usable space that has the scroll bar size taken into account.</p>
+
+                        <p>I have since tested my journal across all these devices as shown in the image below:</p>
+
+                        <figure>
+                            <!-- Insert image of iPod, iPhone 7, iPhone 11, desktop and whatever else -->
+                        </figure>
+
+                        <p>With a lot of free time, I have also added some meta tags that help other online applications interpret the site type and page contents. This includes the open graph tags that help applications such as Discord create a custom card which includes the site title, description and thumbnail image. I have also included the twitter tags so if this page is tweeted, twitter can also create a customized card with it's own custom data.</p>
+
+                        <h4>CSS Parallax Experimenting</h4>
+                        <p>Trying a single layout isn't a really good way of finding the best solution so I created a second test layout that used css parallax on the hero section. The effect was incredible and made it stunning to view but came at a great disadvantage. Mobile devices inertial scrolling was disabled making for a terrible experience when looking through the actual content. This disadvantage was too great for me so I took to not including it regardless of media queries.</p>
+
+                        <p>If you're interested in the parallax effect, I have included a link to the code where you can test it out! <a href="parallax.html" target="_blank">Click here to go check it out</a></p>
+
+                        <h4>Validation</h4>
+                        <p>I did my regular validation checks to ensure there were no errors introduced this week and the only error I got was a duplicate tag that was caused by copy-pasting code from last week into this week's section. Other than that, no errors once corrected!</p>
 
                     </div>
 
                     <aside class="article-aside">
                         <h3>References</h3>
                         <ol>
-                            <li><a id="w2-1" href="https://jh1033.brighton.domains/ci435/tutorials/tutorial02.html" target="_blank">
-                                Tutorial Week 2
+                            <li><a id="w7-1" href="http://jh1033.brighton.domains/ci435/tutorials/tutorial08.html" target="_blank">
+                                Tutorial Week 8
                             </a></li>
                         </ol>
                     </aside>
-                </article> -->
+                </article>
 
 
                 <!-- <article id="week9">
