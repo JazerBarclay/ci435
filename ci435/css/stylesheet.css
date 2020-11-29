@@ -140,6 +140,13 @@ a:active {
     color: var(--font-color);
 }
 
+/* External Links Formatting */
+article a[href^="https://"]:not([href*="jb2139.brighton.domains"]):after {
+    white-space: nowrap;
+    color: var(--link-color);
+    content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
+
 /* Inline Text Modifiers */
 strong {
     font-weight: 600;
