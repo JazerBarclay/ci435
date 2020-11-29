@@ -973,11 +973,11 @@
 
                         <p>I have also set the media query for larger screes to use the banner image to span the full width of the grid. This initially had an issue where on some browsers and certain operating systems, it would either take into consideration the scroll bar and not overflow or ignore it and create an x-axis scroll which I certainly didn't want.</p>
 
-                        <p>I fixed this by using the following css styling:</p>
+                        <p>My initial idea to fix this was to use the following css styling:</p>
                         
                         <pre><code>width: calc(100vw - ( 100vw - 100% ));</code></pre>
 
-                        <p>This fix takes the view width and subtracts the difference between it and the 100% usable space that has the scroll bar size taken into account.</p>
+                        <p>This fix would take the view width and subtracts the difference between it and the 100% usable space that has the scroll bar size taken into account. This however broke the setup for the sticky banner background image on the right aligned panel since the image is tricked into being the full width using the 100vw width sizing. As a better fix, I have set the x-axis overflow on the body element to be hidden. This isn't a very good practice however all content is set to be scroll-able within the article containers so this shouldn't be an issue.</p>
 
                         <p>I have since tested my journal across all these devices as shown in the image below:</p>
 
