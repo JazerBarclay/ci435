@@ -2,7 +2,9 @@
 [![W3C Validation](https://img.shields.io/w3c-validation/default?label=INDEX&style=for-the-badge&targetUrl=https%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Findex.html)](https://validator.w3.org/nu/?doc=http%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Findex.html)
 [![W3C Validation](https://img.shields.io/w3c-validation/default?label=TUTORIAL&style=for-the-badge&targetUrl=https%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Ftutorial.html)](https://validator.w3.org/nu/?doc=http%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Ftutorial.html)
 [![W3C Validation](https://img.shields.io/w3c-validation/default?label=CONTACT&style=for-the-badge&targetUrl=https%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Fcontact.html)](https://validator.w3.org/nu/?doc=http%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Fcontact.html)
-[![W3C Validation](https://img.shields.io/badge/CSS-VALIDATED-44cc10?style=for-the-badge)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Fcss%2Fstylesheet.css)
+[![W3C Validation](https://img.shields.io/badge/CSS-VALIDATED-44cc10?style=for-the-badge)](https://jigsaw.w3.org/css-validator/validator?
+uri=https%3A%2F%2Fjb2139.brighton.domains%2Fci435%2Fcss%2Fstylesheet.css)
+[![GitHub](https://img.shields.io/github/license/jazerbarclay/ci435?style=for-the-badge)](https://github.com/JazerBarclay/ci435/blob/main/LICENSE)
 
 # CI435 - Introduction to Web Development
 
