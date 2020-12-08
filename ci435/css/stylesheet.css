@@ -418,6 +418,17 @@ footer {
     background-size: cover;
 }
 
+#contact-hero {
+    /* Photo by Isabella Christina on Unsplash */
+    /* https://unsplash.com/@christina?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText */
+    /* https://unsplash.com/s/photos/timer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),  url('../images/hello-neon.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .hero {
     min-height: 80vh;
     padding: 20px;
@@ -582,13 +593,12 @@ footer {
 }
 
 #week9 .article-banner {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/brighton-domains-screenshot.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),  url('../images/contact-page.jpg') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 
 /* ===================================== */
@@ -673,7 +683,58 @@ article aside {
     transition: var(--hover-transition);
 }
 
+/* ============================= */
+/* ----- Contact Page Form ----- */
+/* ============================= */
 
+form {
+    display: grid;
+    max-width: 800px;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 100px auto;
+}
+
+form label {
+    background-color: var(--header-footer-color);
+    padding: 10px 10px 0px 10px;
+}
+
+input  {
+    background: var(--header-footer-color) !important;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 16px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+textarea {
+    background: var(--header-footer-color);
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 12pt;
+    margin-bottom: 16px;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    height: 140px;
+    resize: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#contact-main {
+    background-color: var(--page-color);
+}
 
 /* ==================================== */
 /* ----- Responsive Media Queries ----- */

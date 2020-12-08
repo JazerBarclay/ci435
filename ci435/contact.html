@@ -1,62 +1,109 @@
-<!doctype html><!--HTML5 doctype declaration -->
-<html lang="en"><!--default language of the document content -->
-	
+<!DOCTYPE html>
+<!-- HTML5 doctype declaration best practice on first line -->
+<!-- Default language of the document content -->
+<html lang="en">
+
     <head>
-		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
-		<title>Learning Journal template</title><!--web page title -->
-	</head>
+        <!--Unicode character encoding for the document -->
+        <meta charset="utf-8">
+        <!--Page Title -->
+        <title>Contact Jazer</title>
+        <!-- Normalize css to ensure the same style is used as a base across all browsers -->
+        <link href="css/normalize.css" rel="stylesheet" />
+        <!-- My Stylesheet -->
+        <link href="css/stylesheet.css" rel="stylesheet /">
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-<!--Markup all web page content inside the 'body' tags -->
-	<div id="wrapper">
-	<!--The 'wrapper' contains all the page content-->
-	
-    <header><!--The main heading for the page -->
-		<h1>page heading</h1>
-		<h2>sub-heading</h2>
-	</header>
-	
-    <nav><!--The primary navigation for the page -->
-	<ul>
-		<li><a href="">Learning Journal</a></li>
-		<li><a href="">Tutorial</a></li>
-        <li><a href="">Contact me</a></li>
-	</ul>
-	</nav>
-    
-    <main><!--The main page content -->
-        
-        	<h2>Weekly Posts</h2>
-	
-    	<article>
-			<header>
-			<h3>Week 1: ...</h3>
-			</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat, ante lectus 
-porttitor tellus, eget blandit urna nibh a metus. </p>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="192x192" href="images/icon.png">
 
-        <p>Some reference here to my own reading and research, explaining what I have done and what I have learned from it.</p>
-        
-		</article>
-           
-    </main><!--Close main page content --> 
-        
-        <aside>
-        
-        	<h2>References</h2>
-            
-            	<ol>
-                	<li>...</li>
-                    <li>...</li>
-                </ol>
-            
-        </aside>    
- 
-  
-	<footer><!--Footer content -->
-		<small>&copy; 2019, author.</small>
-	</footer>
+        <!-- Site Meta -->
+        <meta name="description" content="Contact Jazer">
+        <meta name="theme-color" content="#1382cc">
+        <meta name="msapplication-TileColor" content="#1382cc">
+        <meta name="referrer" content="unsafe-url">
+        <meta name="robots" content="index, follow">
 
-	</div><!--Close 'wrapper' div -->
-</body><!--Close 'body' -->
-</html><!--Close 'html' -->
+        <!-- Open Graph Meta -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Jazer's CI435 Coursework" />
+        <meta property="og:title" content="Contact Jazer" />
+        <meta property="og:description" content="Fill in the form to send me a message" />
+        <meta property="og:image" content="https://jb2139.brighton.domains/ci435/images/huxley-building.jpeg" />
+        <meta property="og:url" content="https://jb2139.brighton.domains/ci435/contact.html" />
+        <meta property="og:locale" content="en_GB">
+
+        <!-- Twitter Meta -->
+        <meta name="twitter:title" content="Contact Jazer">
+        <meta name="twitter:description" content="Fill in the form to send me a message">
+        <meta name="twitter:image" content="https://jb2139.brighton.domains/ci435/images/huxley-building.jpeg">
+        <meta name="twitter:site" content="@jazerbarclay">
+        <meta name="twitter:creator" content="@jazerbarclay">
+		<meta content="summary_large_image" name="twitter:card">
+		
+    </head>
+
+    <!--Markup all web page content inside the 'body' tags -->
+    <body>
+
+        <!-- Header with logo + navigation -->
+        <header>
+            <nav>
+                <a id="logo" href="#">Learning Journal</a>
+
+                <!-- Checkbox and 'Span Hamburger' Icon -->
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <!-- Unordered List for Menu Items -->
+                <ul class="menu">
+                    <li><a href="index.html">Journal</a></li>
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--The main page content -->
+        <main id="contact-main">
+            <section id="contact-hero" class="hero">
+                <div id="hero-container">
+                    <img src="images/jb_thumbnail.png" alt="JB Thumbnail Image" />
+                    <h1>Contact Me</h1>
+                    <p>Send me a message by filling out the form below!</p>
+                </div>
+            </section>
+            <section id="contact-form-section">
+				<form class="waypoint" id="contact-form" action="mail_handler.php" method="POST">
+                    <label for="form_name">Name:</label>
+                    <input id="form_name" type="text" name="name" required />
+                    <label for="form_email">Email Address:</label>
+                    <input id="form_email" type="email" name="email" required />
+                    <label for="form_message">Your Message:</label>
+                    <textarea id="form_message" name="message"></textarea>
+                    <input class="button" type="submit" id="submit" name="submit" value="Send" />
+                  </form>
+            </section>
+        </main>
+
+        <!-- Footer content -->
+        <footer>
+            <a href="mailto:jb2139@uni.brighton.ac.uk">Email Author</a><br /><br />
+            <small>
+                &copy; 2020, Author.<br />
+                Licensed under the 
+                <a href="https://github.com/JazerBarclay/ci435/blob/main/LICENSE">MIT License</a><br />
+                Hosted on <a href="https://github.com/jazerbarclay/ci435">Github</a>
+            </small>
+        </footer>
+
+        <!-- Return to Top -->
+        <a id="go-to-top" href="#top">
+            <svg width="32" height="32" viewBox="0 0 32 32" class="icon" xmlns="http://www.w3.org/2000/svg">
+                <path id="icon-up" d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"></path>
+            </svg>
+        </a>
+
+    </body>
+
+</html>
