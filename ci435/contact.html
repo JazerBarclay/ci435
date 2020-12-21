@@ -46,7 +46,7 @@
 
     <!--Markup all web page content inside the 'body' tags -->
     <body>
-
+        
         <!-- Header with logo + navigation -->
         <header>
             <nav>
@@ -73,17 +73,69 @@
                     <p>Send me a message by filling out the form below!</p>
                 </div>
             </section>
+
             <div id="contact-form-section">
-				<form class="waypoint" id="contact-form" action="mail_handler.php" method="POST">
-                    <label for="form_name">Name:</label>
-                    <input id="form_name" type="text" name="name" required />
-                    <label for="form_email">Email Address:</label>
-                    <input id="form_email" type="email" name="email" required />
-                    <label for="form_message">Your Message:</label>
-                    <textarea id="form_message" name="message"></textarea>
-                    <input class="button" type="submit" id="submit" name="submit" value="Send" />
+
+				<form class="" id="contact-form" action="mail_handler.php" method="POST">
+
+                    <fieldset id="form-details">
+                        <legend>Details</legend>
+                        <label for="form_name">Name:</label>
+                        <input id="form_name" type="text" name="name" required />
+                        <label for="form_email">Email Address:</label>
+                        <input id="form_email" type="email" name="email" required />
+                    </fieldset>
+
+                    <fieldset id="form-message">
+                        <legend>Message</legend>
+                        <textarea id="form_message" name="message"></textarea>
+                    </fieldset>
+
+                    <fieldset id="form-meta">
+                        <legend>More Info</legend>
+
+                        <label>Category</label>
+                        <select id="form-category" name="category">
+                            <option value="university">University</option>
+                            <option value="work">Work</option>
+                            <option value="personal">Personal</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label>Priority</label>
+
+                        <label for="priority-low">
+                            <input type="radio" id="priority-low" name="priority" value="low" checked />
+                            Low
+                        </label>
+                        <label for="priority-medium">
+                            <input type="radio" id="priority-medium" name="priority" value="mid" />
+                            Medium
+                        </label>
+                        <label for="priority-high">
+                            <input type="radio" id="priority-high" name="priority" value="high" />
+                            High
+                        </label>
+                        
+                        <br />
+
+                        <label for="email-copy">
+                            <input type="checkbox" id="email-copy" name="email-copy" value="copy">
+                            Email me a copy
+                        </label>
+
+                     </fieldset>
+
+                    <fieldset id="form-send">
+                        <legend>Send</legend>
+                        <input class="button " type="reset" id="reset" name="reset" value="Reset" />
+                        <input class="button primary-button" type="submit" id="submit" name="submit" value="Send" />
+                    </fieldset>
+
                   </form>
+
                 </div>
+
         </main>
 
         <!-- Footer content -->
