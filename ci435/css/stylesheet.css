@@ -196,7 +196,7 @@ pre code {
 
 /* ----- Figures and Images ----- */
 
-figure { margin: 0; }
+figure { text-align: center; margin: auto; }
 
 figure img	{
     max-width: 800px;
@@ -308,6 +308,7 @@ nav .menu-icon .navicon {
     display: block;
     height: 2px;
     position: relative;
+    transition: all .2s ease-out;
     width: 18px;
 }
 
@@ -712,6 +713,8 @@ fieldset legend {
 form label {
     background-color: var(--header-footer-color);
     padding: 10px 10px 6px 10px;
+    height: 1rem;
+    max-height: 1rem;
     display: flex;
 }
 
@@ -730,8 +733,40 @@ input, select {
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
+    max-height: 16px;
     margin-right: 20px;
+    margin-bottom: 0;
 }
+
+/*  */
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 0 1px var(--border-color);
+  }
+  
+  input[type='radio']:checked {
+    box-shadow: 0 0 0 1px var(--primary-color);
+  }
+  
+  input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+  }
+  
+  input[type='radio']:checked:before {
+    background: var(--primary-color);
+  }
+
+/*  */
 
 textarea {
     background: var(--header-footer-color);
@@ -792,19 +827,55 @@ button:hover, .button:hover {
     border: 1px solid var(--header-footer-color);
 }
 
-#form-details {
 
+#form-priority-label {
+    max-height: none;
+    height: auto;
+    align-items: center;
 }
 
-#form-message {
+@media (min-width: 800px) {
 
-}
+    form {
+        max-width: 1600px;
+    }
 
-#form-meta {
+    #form-details {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        gap: 0 16px;
+    }
+    
+    #form-meta {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        gap: 0 16px;
+    }
 
-}
+    #form-priority-label {
+        display: grid;
+        align-items: center;
+        grid-template-columns: auto auto auto auto;
+        grid-row: span 2;margin-bottom: 16px;
+        height: auto;
+        max-height: none;
+    }
 
-#form-send {
+    input[type="radio"] {
+        grid-row: span 2;
+    }
+
+    #form-email-copy-label {
+        padding: 20px;
+    }
+    
+    #form-send {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+    }
 
 }
 

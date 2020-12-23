@@ -102,29 +102,32 @@
                             <option value="other">Other</option>
                         </select>
 
-                        <label>Priority</label>
+                        <label id="form-priority-label">
+                            
+                            <p>Priority</p>
 
-                        <label for="priority-low">
-                            <input type="radio" id="priority-low" name="priority" value="low" checked />
-                            Low
-                        </label>
-                        <label for="priority-medium">
-                            <input type="radio" id="priority-medium" name="priority" value="mid" />
-                            Medium
-                        </label>
-                        <label for="priority-high">
-                            <input type="radio" id="priority-high" name="priority" value="high" />
-                            High
-                        </label>
-                        
-                        <br />
-
-                        <label for="email-copy">
-                            <input type="checkbox" id="email-copy" name="email-copy" value="copy">
-                            Email me a copy
+                            <label for="priority-low">
+                                <input type="radio" id="priority-low" name="priority" value="low" checked />
+                                Low
+                            </label>
+                            <label for="priority-medium">
+                                <input type="radio" id="priority-medium" name="priority" value="mid" />
+                                Medium
+                            </label>
+                            <label for="priority-high">
+                                <input type="radio" id="priority-high" name="priority" value="high" />
+                                High
+                            </label>
                         </label>
 
                      </fieldset>
+
+                    <fieldset>
+                     <label id="form-email-copy-label" for="email-copy">
+                         <input type="checkbox" id="email-copy" name="email-copy" value="copy" checked>
+                         Email me a copy
+                     </label>
+                    </fieldset>
 
                     <fieldset id="form-send">
                         <legend>Send</legend>
