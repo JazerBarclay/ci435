@@ -1050,16 +1050,68 @@
                             <li>Run validation</li>
                         </ol>
                         <h4>Updating the contact page</h4>
-                        <p>I started by using the same code from the tutorial page as most of the structure will remain the same.</p>
+                        <p>I began by using the same code from the tutorial page as most of the structure will remain the same.</p>
                         
                         <p>As I have added meta tags, I updated them to reflect the new pages purpose and also changed the page title accordingly.</p>
 
                         <p>Next I removed all the time management information section and created a new <code>form</code> element within its own section container.</p>
 
                         <h4>Creating the form</h4>
-                        <p>I started with the conventional text box for a name to be entered and under added a second box for an email to be entered.</p>
+                        <p>I started with the conventional text box for a name to be entered and under added a second box for an email to be entered. This combined with a textarea input for a long messages and a send button completes the bare minimum for a contact form.</p>
 
-                        <p>Next I added</p>
+                        <p>Next I added some extra options that may be useful for the person sending the message to add such as a category in the form of a dropdown and a priority list as radio buttons. These can help indicate if the message is urgent or not and what it is about.</p>
+
+                        <p>Finally I used a checkbox indicating if the user wants a copy of the email sent to themselves at the email address provided. This is useful for auditing should the message be university or work related.</p>
+
+                        <h4>Styling the form</h4>
+
+                        <p>The standard white boxes are quite a stark contrast against the darker background and as such can be quite painful on the eyes. I opted to use the same colour as the header and footer for the input boxes and as a background on the labels along with the white text to make it more parsable.</p>
+
+                        <p>I also updated the radio buttons to use a custom style as the black borders didn't show through the background colour. I stuck with the primary action button colour to show its an input rather than just for show.<sup><a href="#w9-2">2</a></sup></p>
+
+                        <p>The buttons I made bigger and added a reset button with plain colours to indicate its a secondary button to the send button. The big blue send button is clear and easy to understand its function.</p>
+
+                        <p>I tried adding a grid layout to the form and its fieldsets however chrome currently has a bug that messes with the rendering of forms making the layout impossible. I did however try this on firefox and grids work perfectly fine.<sup><a href="#w9-3">3</a></sup></p>
+
+                        <p>I opted to use labels instead of hints within the boxes as users who use an autocomplete option for filling in the boxes may not know if it put the right information in the right spot and strains the standard user's short term memory.</p>
+
+                        <p>The initial layout is designed as a single column so it works on all screen sizes. I also capped the maximum width so on larger screens that don't support the grid style can still be usable without being too far stretched.</p>
+
+                        <figure> <!-- Image that illustrates the web page content -->
+                            <img src="images/contact-form-chrome-firefox.jpg" alt="A screenshot of my contact form on chrome (left) and firefox (right)" /> <!-- Source file of the image -->
+                            <figcaption>A screenshot of my contact form on chrome (left) and firefox (right)<br /> <!-- Illustration caption -->
+                            <small>Screenshot &copy; Author</small> <!-- Copyright Image -->
+                            </figcaption> <!-- End Caption-->
+                        </figure> <!-- End figure markup -->
+
+                        <h4>Improvements for next time</h4>
+
+                        <p>I'm not happy with the result of the contact form for a few reasons:</p>
+
+                        <ol>
+                            <li>Grids not supported on chrome forms</li>
+                            <li>Each section needs its own grid or flex layout</li>
+                            <li>Custom radio and checkboxes not as clear</li>
+                        </ol>
+
+                        <p>If I were to do this form again, I would use <code>display: contents;</code> for each of the child elements of the grid and make the full form a grid. This would solve the individual grid/flex layouts for each section and would support chrome through its fieldset grid render bug. I would also set each element as a grid area item to better manage the layout across different screen sizes.</p>
+
+                        <p>The support for display contents is still patchy as chrome and edge don't have full support<sup><a href="#w9-4">4</a></sup> yet however is being worked on.</p>
+
+                        <p>I would also ensure a standard checkbox and radio button style to unify the layout and make user input a bit easier on mobile devices.</p>
+
+                        <h4>Validation</h4>
+                        <p>I did a check on the contact page and the css stylesheet and both came back without any errors or warnings.</p>
+    
+                        <p>Here is a view of my site concluding week 9:</p>
+                                            
+                        <figure> <!-- Image that illustrates the web page content -->
+                            <img src="images/week9-finish.jpg" alt="My Learning Journal Week 8 Screenshot" /> <!-- Source file of the image -->
+                            <figcaption>My Learning Journal Week 8 Screenshot<br /> <!-- Illustration caption -->
+                            <small>Screenshot &copy; Author</small> <!-- Copyright Image -->
+                            </figcaption> <!-- End Caption-->
+                        </figure> <!-- End figure markup -->
+
 
                     </div>
 
@@ -1069,13 +1121,18 @@
                             <li><a id="w9-1" href="https://jh1033.brighton.domains/ci435/tutorials/tutorial09/tutorial09.html" target="_blank">
                                 Tutorial Week 9
                             </a></li>
+                            <li><a id="w9-2" href="https://codepen.io/imohkay/pen/bCpxm" target="_blank">
+                                Codepen example of custom radio and check boxes
+                            </a></li>
+                            <li><a id="w9-3" href="https://stackoverflow.com/questions/51076747/grid-layout-on-fieldset-bug-on-chrome" target="_blank">
+                                Grid layout on fieldsets not working in chrome
+                            </a></li>
+                            <li><a id="w9-4" href="https://caniuse.com/css-display-contents" target="_blank">
+                                Display contents css support
+                            </a></li>
                         </ol>
                     </aside>
                 </article>
-
-
-
-
 
             </section>
 
