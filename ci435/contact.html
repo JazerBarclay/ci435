@@ -79,22 +79,22 @@
 				<form class="" id="contact-form" action="mail_handler.php" method="POST">
 
                     <fieldset id="form-details">
-                        <legend>Details</legend>
-                        <label for="form_name">Name:</label>
+                        <legend id="form-details-legend">Details</legend>
+                        <label id="form-name-label" for="form_name">Name:</label>
                         <input id="form_name" type="text" name="name" required />
-                        <label for="form_email">Email Address:</label>
+                        <label id="form-email-label"for="form_email">Email Address:</label>
                         <input id="form_email" type="email" name="email" required />
                     </fieldset>
 
                     <fieldset id="form-message">
-                        <legend>Message</legend>
+                        <legend id="form-message-legend">Message</legend>
                         <textarea id="form_message" name="message"></textarea>
                     </fieldset>
 
                     <fieldset id="form-meta">
-                        <legend>More Info</legend>
+                        <legend id="form-meta-legend">More Info</legend>
 
-                        <label>Category</label>
+                        <label id="form-category-label">Category</label>
                         <select id="form-category" name="category">
                             <option value="university">University</option>
                             <option value="work">Work</option>
@@ -102,24 +102,19 @@
                             <option value="other">Other</option>
                         </select>
 
-                        <label id="form-priority-label">
-                            
-                            <p>Priority</p>
-
-                            <label for="priority-low">
-                                <input type="radio" id="priority-low" name="priority" value="low" checked />
-                                Low
-                            </label>
-                            <label for="priority-medium">
-                                <input type="radio" id="priority-medium" name="priority" value="mid" />
-                                Medium
-                            </label>
-                            <label for="priority-high">
-                                <input type="radio" id="priority-high" name="priority" value="high" />
-                                High
-                            </label>
+                        <label id="form-priority-label">Priority</label>
+                        <label id="form-priority-low-label" for="priority-low">
+                            <input type="radio" id="priority-low" name="priority" value="low" checked />
+                            Low
                         </label>
-
+                        <label id="form-priority-mid-label" for="priority-medium">
+                            <input type="radio" id="priority-medium" name="priority" value="mid" />
+                            Medium
+                        </label>
+                        <label id="form-priority-high-label" for="priority-high">
+                            <input type="radio" id="priority-high" name="priority" value="high" />
+                            High
+                        </label>
                      </fieldset>
 
                     <fieldset>
@@ -130,8 +125,8 @@
                     </fieldset>
 
                     <fieldset id="form-send">
-                        <legend>Send</legend>
-                        <input class="button " type="reset" id="reset" name="reset" value="Reset" />
+                        <legend id="form-send-legend">Send</legend>
+                        <input class="button" type="reset" id="reset" name="reset" value="Reset" />
                         <input class="button primary-button" type="submit" id="submit" name="submit" value="Send" />
                     </fieldset>
 
