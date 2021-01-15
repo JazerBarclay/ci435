@@ -210,6 +210,7 @@ figure img	{
     height: 0;
   }
   .video-wrapper iframe {
+    border: none;
     position: absolute;
     top: 0;
     left: 0;
