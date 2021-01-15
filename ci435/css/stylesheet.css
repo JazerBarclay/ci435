@@ -840,7 +840,7 @@ input[type='radio'] {
   
   input[type='radio']:checked:before {
     background: var(--primary-color);
-  } */
+  }
 
 
 #form-priority-label {
